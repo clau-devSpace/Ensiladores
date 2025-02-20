@@ -1,0 +1,571 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #edebe6;
+}
+
+header{
+    min-height: 100vh;
+    background-image: url(/imagenes/cortadora\ -\ copia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #295996;
+}
+
+/* Contenedor del menú */
+.menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #295996;
+    height: 100%;
+    width: 250px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para el menú */
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.menu-container ul li {
+    margin: 20px 0;
+}
+
+.menu-container ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    /*padding: 10px;*/
+}
+
+.menu-container ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilo del botón de abrir/cerrar menú */
+.open-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn{
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 200px; /*Posición en el contenedor*/
+}
+
+h1{
+    font-family: "Fira Sans";
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 135px;
+}
+
+.animacion1{
+    animation-duration: 1s;
+}
+
+h2{
+    font-family: "Fira Sans";
+    font-size: 40px;
+    color: #9c7b43;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.titulo p{
+    font-family: "Fira Sans";
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+.logo{
+    width: 165px;
+    height: 65px;
+}
+
+.convenios{
+    background-color: #e0e0e0;
+}
+/*Estilos primer grid*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 20px;
+    justify-items: center; 
+    align-items: center;
+    background-color: #d1d1d6;
+    margin-top: 100px;
+}
+
+
+.textos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+.columna-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.columna-parrafos {
+    background-color: #295996; 
+    color: white; 
+    width: 300px;  
+    height: 300px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.columna-parrafos::before, .columna-parrafos::after {
+    content: ""; 
+    position: absolute;
+    left: 10px; 
+    right: 10px; 
+    height: 1px;
+    background-color: white; 
+}
+
+/* Línea arriba */
+.columna-parrafos::before {
+    top: 10px; /* Línea blanca a 10px del borde superior */
+}
+
+/* Línea abajo */
+.columna-parrafos::after {
+    bottom: 10px; /* Línea blanca a 10px del borde inferior */
+}
+
+.imagenes {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+
+.imagenes img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/* Estilo para los elementos de la lista */
+.textos ul {
+    list-style-type: none;
+    padding: 0;
+    color: #295996;
+}
+
+.textos li {
+    margin-bottom: 8px; 
+    font-size: 20px;
+    font-weight: 400;
+    color: #575757;
+    cursor: pointer;
+}
+
+/* Estilo de los encabezados */
+h3 {
+    margin-bottom: 15px; /* Espacio debajo del encabezado */
+    font-size: 1.5em;
+}
+
+.secciones{
+   font-size: 35px;
+   color: #295996;
+}
+
+
+
+/*Estilos segunda grid*/
+
+.agrinir {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 5px; 
+    justify-items: center; 
+    align-items: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+/* Hace que el banner ocupe las dos columnas */
+.banner-grande {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+
+.segunda-fila {
+    background-image: url(/imagenes/jszxwfnp.png); 
+    background-position: center;
+    padding: 20px 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+    width: 100vw; 
+    box-sizing: border-box; 
+}
+
+.segunda-fila li{
+    color: #575757;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contenido-agrinir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto; 
+    max-width: 100%; 
+}
+
+.contenido-agrinir img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.imagen-equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 50%; 
+}
+
+
+.imagen-equipo img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contenido-agrinir ul{
+    list-style: none;
+}
+
+.contenido-agrinir li{
+    cursor: pointer;
+}
+.contenido-agrinir .flecha{
+    color: red;
+    font-size: 20px;
+}
+
+
+/* Estilos para el carrusel */
+
+.carousel-container {
+    position: relative;
+    width: 100%; 
+    max-width: 1000px; 
+    overflow: hidden; /* Ocultar cualquier imagen que se desborde */
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.carousel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; /* Esconde las imágenes que se salen del contenedor */
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 190px; /* Tamaño fijo para cada imagen */
+    height: 190px; /* Tamaño fijo para cada imagen */
+    padding: 5px; 
+    border-radius: 20%;
+    box-sizing: border-box; 
+    margin-right: 10px;
+}
+
+.carousel-btn {
+    color: #9c7b43;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1;
+    margin: 10px; 
+}
+
+.carousel-btn:hover{
+    color:#295996;
+}
+
+.carousel-btns {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    margin-top: 20px; 
+}
+
+/* Responsividad: Pantallas medianas (hasta 768px) */
+
+/* Responsividad: Pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+
+    header{
+        min-height: 80vh;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        overflow: hidden; 
+    }
+
+    .textos {
+        grid-template-columns: 1fr; 
+        width: 100%;
+        margin: auto;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .columna-parrafos {
+        width: 60%;
+        height: auto; 
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .columna-parrafos p{
+        font-size: 15px;
+    }
+
+    .columna-parrafos::before {
+        top: 2px; /* Línea blanca a 10px del borde superior */
+    }
+    
+    /* Línea abajo */
+    .columna-parrafos::after {
+        bottom: 2px; /* Línea blanca a 10px del borde inferior */
+    }
+
+    .textos li { 
+        font-size: 18px;
+    }
+
+    .columna-lista {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .secciones{
+        font-size: 25px;
+        padding-bottom: 10px;
+     }
+     
+     .imagenes {
+        padding-top: 30px;
+    }
+
+    .titulo p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+/* Responsividad: Pantallas medianas (hasta 768px) */
+@media (max-width: 480px) {
+
+    header{
+        min-height: 100vh;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; 
+        overflow: hidden;
+    }
+
+     .textos {
+       grid-template-columns: 1fr;
+       width: 100%;
+       margin: auto;
+     }
+
+    .textos {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .columna-parrafos {
+        width: 100%;
+        height: auto; 
+        padding: 10px;
+        text-align: center;
+    }
+
+    .columna-parrafos p{
+        font-size: 15px;
+    }
+
+    .columna-parrafos::before {
+        top: 3px; /* Línea blanca a 10px del borde superior */
+    }
+    
+    /* Línea abajo */
+    .columna-parrafos::after {
+        bottom: 3px; /* Línea blanca a 10px del borde inferior */
+    }
+
+    .textos li {
+        margin-bottom: 8px; 
+        font-size: 15px;
+        font-weight: 400;
+        color: #575757;
+        cursor: pointer;
+    }
+
+    .columna-lista {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .secciones{
+        font-size: 25px;
+        padding-bottom: 10px;
+     }
+     
+     .imagenes {
+        padding-top: 30px;
+    }
+
+    .titulo p{
+        font-weight: 400;
+        font-size: 13px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .segunda-fila li{
+        font-size: 15px;
+    }
+
+    .contenido-agrinir img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .imagen-equipo {
+        display: none;
+    }
+
+    .open-btn{
+        font-size: 25px;
+    }
+
+    .logo{
+        width: 150px;
+        height: 50px;
+    }
+
+}
+
+
+

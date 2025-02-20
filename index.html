@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CACF | Camara Argentina de Contratistas Forrajeros</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <header>
+      <nav>
+        <img src="/imagenes/logo.png" class="logo animacion1 animate__animated animate__fadeIn" />
+
+        <button class="open-btn animacion1 animate__animated animate__fadeIn" onclick="toggleMenu()">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="menu-container" id="menu">
+          <button class="close-btn" onclick="toggleMenu()">
+            <i class="bi bi-x-lg"></i>
+          </button>
+
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Socios</a></li>
+            <li><a href="#">Estadísticas</a></li>
+            <li><a href="#">Mapa</a></li>
+            <li><a href="#">Área Técnica</a></li>
+            <li><a href="#">Convenios</a></li>
+            <li><a href="#">Área Económica</a></li>
+            <li><a href="#">Acceso Socios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Mercado Shops-logo</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="titulo">
+        <h1 class="animacion1 animate__animated animate__fadeIn">Cámara Argentina de<br />Contratistas Forrajeros</h1>
+        <br />
+        <p class="animacion1 animate__animated animate__fadeInUp">
+          Somos una institución sin fines de lucro que agrupa<br />contratistas
+          Forrajeros de todas partes del mundo
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <seccion class="convenios">
+        <h2>Últimos Convenios Firmados</h2>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-images">
+              <img src="imagenes/1.png" alt="Imagen 1" class="carousel-item" />
+              <img src="imagenes/2.png" alt="Imagen 2" class="carousel-item" />
+              <img src="imagenes/3.png" alt="Imagen 3" class="carousel-item" />
+              <img src="imagenes/7.png" alt="Imagen 4" class="carousel-item" />
+              <img src="imagenes/8.png" alt="Imagen 5" class="carousel-item" />
+              <img src="imagenes/6.png" alt="Imagen 6" class="carousel-item" />
+              <img src="imagenes/4.png" alt="Imagen 7" class="carousel-item" />
+              <img src="imagenes/5.png" alt="Imagen 8" class="carousel-item" />
+              <img src="imagenes/9.png" alt="Imagen 9" class="carousel-item" />
+              <img
+                src="imagenes/10.png"
+                alt="Imagen 10"
+                class="carousel-item"
+              />
+            </div>
+          </div>
+          <div class="carousel-btns">
+            <button class="carousel-btn left" id="left-btn">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="carousel-btn right" id="right-btn">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </seccion>
+    </main>
+
+    <div class="grid-container">
+      <div class="textos">
+        <div class="columna-lista">
+          <h3 class="secciones"><span>+</span>Secciones</h3>
+          <ul>
+            <li>Costos de Producción de forrajes</li>
+            <li>Estadísticas de silaje en la ARG</li>
+            <li>La historia de la Institución</li>
+            <li>Comisión Directiva</li>
+            <li>Código de Ética</li>
+            <li>Reuniones Plenarias</li>
+            <li>Fotos de viajes</li>
+            <li>Programas</li>
+          </ul>
+        </div>
+        <div class="columna-parrafos">
+          <h3>Cartelera Novedades</h3>
+          <p>
+            Estamos asociando a<br />contratistas forrajeros.<br />SUMATE!<br />Valor
+            cuota:<br />1ha de silo/máquina
+          </p>
+          <p>Click para + info</p>
+        </div>
+      </div>
+
+      <div class="imagenes">
+        <img src="/imagenes/banner-carro-2019.gif" />
+        <img src="/imagenes/perotti2025.gif" />
+        <img src="/imagenes/GreenPac_Banner_192x100.gif" />
+      </div>
+    </div>
+
+    <div class="agrinir">
+      <div class="banner-grande">
+        <img src="/imagenes/banner_BLADE_791x80.gif" alt="Banner Blade" />
+      </div>
+      <div class="segunda-fila">
+        <div class="contenido-agrinir">
+          <img src="/imagenes/agrinir.png" class="logo-agrinir" alt="Imagen Agrinir" />
+          <ul>
+            <li>
+              <i class="bi bi-arrow-right flecha"></i>Modelo de Informe Técnico
+            </li>
+            <li>
+              <i class="bi bi-arrow-right flecha"></i>Protocolo de Extracción de
+              Muestras
+            </li>
+            <li>
+              <i class="bi bi-arrow-right flecha"></i>Costos y Condiciones del
+              Servicio
+            </li>
+          </ul>
+        </div>
+        <div class="imagen-equipo">
+          <img src="/imagenes/equipo.png" alt="Imagen Equipo" />
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
