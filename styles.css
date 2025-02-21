@@ -15,7 +15,7 @@ body{
 
 header{
     min-height: 100vh;
-    background-image: url(/imagenes/fondo.jpg);
+    background-image: url(/imagenes/imagenes_de_fondo/fondo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -111,13 +111,40 @@ h1{
 }
 
 h2{
-    font-family: "Fira Sans";
     font-size: 40px;
+    font-weight: 400;
     color: #9c7b43;
     text-align: center;
     align-items: center;
     padding-top: 100px;
     padding-bottom: 30px;
+}
+
+h2::after{
+    content: ""; 
+    height: 1px;
+    width: 50%;
+    background-color: #9c7b43; 
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #9c7b43;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2::after{
+    content: ""; 
+    height: 2px;
+    width: 20%;
+    background-color: #9c7b43; 
+    margin-top: 10px;  /* Puedes ajustar el margen para separarlo del texto */
 }
 
 .titulo p{
@@ -271,7 +298,7 @@ h3 {
 }
 
 .segunda-fila {
-    background-image: url(/imagenes/jszxwfnp.png); 
+    background-image: url(/imagenes/imagenes_de_fondo/jszxwfnp.png); 
     background-position: center;
     padding: 20px 0; 
     display: flex; 
@@ -399,6 +426,8 @@ h3 {
     opacity: 1;
     transform: translateY(0); /* Regresa a su posición original */
 }
+
+
 
 
 /* Responsividad: Pantallas medianas (hasta 768px) */

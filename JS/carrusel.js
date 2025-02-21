@@ -1,21 +1,8 @@
-//Menu
-
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  // Cambia la transformación del contenedor del menú
-  if (menu.style.transform === "translateX(0%)") {
-    menu.style.transform = "translateX(100%)"; // Ocultar menú
-  } else {
-    menu.style.transform = "translateX(0%)"; // Mostrar menú
-  }
-}
 //Carrusel
 let currentIndex = 0;
 const imagesContainer = document.querySelector(".carousel-images");
 const images = document.querySelectorAll(".carousel-item");
-const totalImages = images.length; // Total de imágenes (10 en este caso)
-
-// Botones de navegación
+const totalImages = images.length; // Total de imágenes (10 en este caso)// Botones de navegación
 const leftButton = document.getElementById("left-btn");
 const rightButton = document.getElementById("right-btn");
 

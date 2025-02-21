@@ -19,7 +19,7 @@
     <body>
     <header>
       <nav>
-        <a href="index.html"><img src="/imagenes/logo.png" class="logo animacion1 animate__animated animate__fadeIn" /></a>
+        <a href="index.html"><img src="/imagenes/logos/logo.png" class="logo animacion1 animate__animated animate__fadeIn" /></a>
 
         <button class="open-btn" onclick="toggleMenu()">
           <i class="bi bi-list"></i>
@@ -83,68 +83,81 @@
           </div>
         </div>
       </seccion>
+
+      <section>
+        <div class="grid-container">
+          <div class="textos">
+            <div class="columna-lista">
+              <h3 class="secciones box"><span>+</span>Secciones</h3>
+              <ul class="box">
+                <li>Costos de Producción de forrajes</li>
+                <li>Estadísticas de silaje en la ARG</li>
+                <li>La historia de la Institución</li>
+                <li>Comisión Directiva</li>
+                <li>Código de Ética</li>
+                <li>Reuniones Plenarias</li>
+                <li>Fotos de viajes</li>
+                <li>Programas</li>
+              </ul>
+            </div>
+            <div class="columna-parrafos box">
+              <h3>Cartelera Novedades</h3>
+              <p>
+                Estamos asociando a<br />contratistas forrajeros.<br />SUMATE!<br />Valor
+                cuota:<br />1ha de silo/máquina
+              </p>
+              <p>Click para + info</p>
+            </div>
+          </div>
+    
+          <div class="imagenes box">
+            <img src="/imagenes/banners/banner-carro-2019.gif" />
+            <img src="/imagenes/banners/perotti2025.gif" />
+            <img src="/imagenes/banners/GreenPac_Banner_192x100.gif" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="agrinir animate-from-bottom">
+          <div class="banner-grande">
+            <img src="/imagenes/banners/banner_BLADE_791x80.gif" alt="Banner Blade" />
+          </div>
+          <div class="segunda-fila">
+            <div class="contenido-agrinir">
+              <img src="/imagenes/logos/agrinir.png" class="logo-agrinir" alt="Imagen Agrinir" />
+              <ul class="box">
+                <li>
+                  <i class="bi bi-arrow-right flecha"></i>Modelo de Informe Técnico
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right flecha"></i>Protocolo de Extracción de
+                  Muestras
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right flecha"></i>Costos y Condiciones del
+                  Servicio
+                </li>
+              </ul>
+            </div>
+            <div class="imagen-equipo">
+              <img src="/imagenes/otras imagenes/equipo.png" alt="Imagen Equipo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mapa">
+        <h3>Localiza a nuestros socios</h3>
+        <iframe width="560" height="315" src="https://ensiladores.com.ar/InfoSocios/Maps/MapaSociosAgrupado.php" frameborder="0" allowfullscreen></iframe>
+      </section>
     </main>
 
-    <div class="grid-container">
-      <div class="textos">
-        <div class="columna-lista">
-          <h3 class="secciones box"><span>+</span>Secciones</h3>
-          <ul class="box">
-            <li>Costos de Producción de forrajes</li>
-            <li>Estadísticas de silaje en la ARG</li>
-            <li>La historia de la Institución</li>
-            <li>Comisión Directiva</li>
-            <li>Código de Ética</li>
-            <li>Reuniones Plenarias</li>
-            <li>Fotos de viajes</li>
-            <li>Programas</li>
-          </ul>
-        </div>
-        <div class="columna-parrafos box">
-          <h3>Cartelera Novedades</h3>
-          <p>
-            Estamos asociando a<br />contratistas forrajeros.<br />SUMATE!<br />Valor
-            cuota:<br />1ha de silo/máquina
-          </p>
-          <p>Click para + info</p>
-        </div>
-      </div>
+    
 
-      <div class="imagenes box">
-        <img src="/imagenes/banners/banner-carro-2019.gif" />
-        <img src="/imagenes/banners/perotti2025.gif" />
-        <img src="/imagenes/banners/GreenPac_Banner_192x100.gif" />
-      </div>
-    </div>
 
-    <div class="agrinir animate-from-bottom">
-      <div class="banner-grande">
-        <img src="/imagenes/banners/banner_BLADE_791x80.gif" alt="Banner Blade" />
-      </div>
-      <div class="segunda-fila">
-        <div class="contenido-agrinir">
-          <img src="/imagenes/agrinir.png" class="logo-agrinir" alt="Imagen Agrinir" />
-          <ul class="box">
-            <li>
-              <i class="bi bi-arrow-right flecha"></i>Modelo de Informe Técnico
-            </li>
-            <li>
-              <i class="bi bi-arrow-right flecha"></i>Protocolo de Extracción de
-              Muestras
-            </li>
-            <li>
-              <i class="bi bi-arrow-right flecha"></i>Costos y Condiciones del
-              Servicio
-            </li>
-          </ul>
-        </div>
-        <div class="imagen-equipo">
-          <img src="/imagenes/equipo.png" alt="Imagen Equipo" />
-        </div>
-      </div>
-    </div>
-
-    <script src="main.js"></script>
-    <script src="animaciones.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/animaciones.js"></script>
+    <script src="JS/carrusel.js"></script>
   </body>
 </html>
