@@ -21,6 +21,11 @@ header{
 }
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,11 +103,11 @@ h1{
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: 135px;
+    padding-top: 200px;
 }
 
 .animacion1{
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 h2{
@@ -382,6 +387,19 @@ h3 {
     position: relative; 
     margin-top: 20px; 
 }
+
+/*Animaciones*/
+.box {
+    opacity: 0;
+    transform: translateY(100px); /* Mueve el elemento un poco hacia arriba desde abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.box.visible {
+    opacity: 1;
+    transform: translateY(0); /* Regresa a su posición original */
+}
+
 
 /* Responsividad: Pantallas medianas (hasta 768px) */
 
