@@ -613,7 +613,7 @@ h2::after{
 
     .columna-parrafos {
         width: 100%;
-        height: auto; 
+        height: 250px;
         padding: 10px;
         text-align: center;
     }
@@ -703,7 +703,7 @@ h2::after{
         margin-top: 0;
         margin-bottom: 50px;
         width: 100%;
-        height: auto;
+        height: 250px;
     }
     
     .localizar-socios{
