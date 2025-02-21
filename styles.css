@@ -74,7 +74,7 @@ nav{
 /* Estilo del botón de abrir/cerrar menú */
 .open-btn {
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 20px;
     font-size: 40px;
     color: #fff;
@@ -99,7 +99,7 @@ h1{
     font-weight: 400;
     font-size: 50px;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -157,8 +157,8 @@ h2::after{
 }
 
 .logo{
-    width: 165px;
-    height: 65px;
+    width: 150px;
+    height: 50px;
 }
 
 .convenios{
@@ -691,11 +691,12 @@ h2::after{
     .mapa{
         flex-direction: column;
         gap: 30px;
-        min-height: 80vh;
+        min-height: 100vh;
     }
     
     .localizar-socios{
         font-size: 30px;
+        margin-top: 50px;
     }
     
     .estilos-mapa{
