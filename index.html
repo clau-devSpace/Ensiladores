@@ -8,42 +8,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu.css">
+    <script src="JS/menu.js" defer></script>
+    <script src="JS/toggle.js"></script>
     </head>
+
     <body>
     <header>
-      <nav>
-        <a href="index.html"><img src="/imagenes/logos/logo.png" class="logo animacion1 animate__animated animate__fadeIn" /></a>
 
-        <button class="open-btn" onclick="toggleMenu()">
-          <i class="bi bi-list"></i>
-        </button>
-
-        <div class="menu-container" id="menu">
-          <button class="close-btn" onclick="toggleMenu()">
-            <i class="bi bi-x-lg"></i>
-          </button>
-
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Socios</a></li>
-            <li><a href="#">Estadísticas</a></li>
-            <li><a href="#">Mapa</a></li>
-            <li><a href="#">Área Técnica</a></li>
-            <li><a href="#">Convenios</a></li>
-            <li><a href="#">Área Económica</a></li>
-            <li><a href="#">Acceso Socios</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Mercado Shops-logo</a></li>
-          </ul>
-        </div>
-      </nav>
+      <!--Aquí se renderiza el menú-->
+      <div id="nav">    
+      </div>
 
       <div class="titulo">
         <h1 class="animacion1 animate__animated animate__fadeIn">Cámara Argentina de<br />Contratistas Forrajeros</h1>
@@ -57,7 +37,7 @@
 
     <main>
       <seccion class="convenios">
-        <h2 class="h2-convenios">Últimos Convenios Firmados</h2>
+        <h2 class="h2-convenios box">Últimos Convenios Firmados</h2>
         <div class="carousel-container">
           <div class="carousel">
             <div class="carousel-images box">
@@ -149,7 +129,7 @@
 
       <section>
         <div class="mapa">
-          <h3 class="localizar-socios">Localiza a nuestros<br>Socios</h3>
+          <h3 class="localizar-socios box">Localiza a nuestros<br>Socios</h3>
           <iframe class="estilos-mapa" src="https://ensiladores.com.ar/InfoSocios/Maps/MapaSociosAgrupado.php" frameborder="0" allowfullscreen></iframe>
         </div>
       </section>
@@ -157,7 +137,7 @@
 
     <footer>
       <div>
-        <h2 class="h2-footer">Cámara Argentina de<br>Contratistas Forrajeros</h2>
+        <a href="index.html"><img src="imagenes/logos/logo-footer.png" class="logo-footter" /></a>
       </div>
       <div class="redes-sociales">
         <h4>Seguinos en nuestras Redes Sociales</h4>
@@ -169,8 +149,6 @@
       </div>
     </footer>
 
-
-    <script src="JS/menu.js"></script>
     <script src="JS/animaciones.js"></script>
     <script src="JS/carrusel.js"></script>
   </body>

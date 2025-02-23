@@ -1,11 +1,12 @@
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  // Cambia la transformación del contenedor del menú
-  if (menu.style.transform === "translateX(0%)") {
-    menu.style.transform = "translateX(100%)"; // Ocultar menú
-  } else {
-    menu.style.transform = "translateX(0%)"; // Mostrar menú
-  }
+// menu.js
+function cargarMenu() {
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el menú:', error));
 }
 
-
+// Llamar a la función para cargar el menú al cargar la página
+cargarMenu();

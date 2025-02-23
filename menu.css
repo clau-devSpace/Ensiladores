@@ -1,0 +1,78 @@
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #295996;
+}
+
+/* Contenedor del menú */
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #295996;
+    height: 100%;
+    width: 250px;
+    display: none; /* Oculta el menú por defecto */
+    z-index: 1000;
+}
+
+/* Estilo para mostrar el menú */
+.menu-container.active {
+    display: block; /* Muestra el menú */
+}
+
+/* Estilo para el menú */
+.menu-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.menu-container ul li {
+    margin: 20px 0;
+}
+
+.menu-container ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    /*padding: 10px;*/
+}
+
+.menu-container ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilo del botón de abrir/cerrar menú */
+.open-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn{
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 200px; /*Posición en el contenedor*/
+}
