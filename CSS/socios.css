@@ -77,6 +77,25 @@ img{
     cursor: pointer;
 }
 
+.tabla-container {
+    max-width: 100%; /* Asegura que se ajuste al ancho de la pantalla */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    overflow-y: auto; /* Permite desplazamiento vertical */
+    max-height: 400px; /* Ajusta según sea necesario */
+    margin-top: 20px; /* Espaciado opcional */
+}
+
+/* Opcional: Para que el scroll se vea mejor */
+.tabla-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tabla-container::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+
  /*Estilos para el modal
  Estructura de la tabla */
 .table-modal {
@@ -208,6 +227,16 @@ h5 {
         justify-content: center;
         align-items: center;
     }
+
+    h2{
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    
+    .encabezado p{
+        font-size: 13px;
+    }
+
 
 }
 

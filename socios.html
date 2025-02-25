@@ -29,172 +29,174 @@
 
         
     <!--Tabla/lista de socios general. Info de ejemplo, primeros 15 socios de la lista original ordenada alfabeticamente, incluye funcion "sorTable()" para ordenar alfabeticamente, a modo de muestra-->
-
-    <table id="myTable">
-        <thead>
-            <tr>
-                <th class="provincia" onclick="sortTable(0)">Provincia</th>
-                <th onclick="sortTable(1)">Ciudad</th>
-                <th onclick="sortTable(2)">Empresa</th>
-                <th onclick="sortTable(3)">Contacto</th>
-                <th onclick="sortTable(4)">Servicio</th>
-                <th onclick="sortTable(5)">Telefono Movil</th>
-                <th>Detalles Socios</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>9 de Julio</td>
-                <td>Con Rural SRL</td>
-                <td>Feletto German</td>
-                <td>Picado de Forrajes</td>
-                <td>+54 9 2317 41-7410</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 2 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Ameghino</td>
-                <td>Arina Santiago</td>
-                <td>Arina Santiago</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 3388 46-6340</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-               
-            </tr>
-            <!-- Fila 3 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Ameguino</td>
-                <td>Zabalegui Hnos SH</td>
-                <td>Zabalegui Mario</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 2355 57-0222</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 4 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Ameguino</td>
-                <td>El Mate de Ameguino SA</td>
-                <td>Eder Juan</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 3388 67-8844</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 5 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Ayacucho</td>
-                <td>Lucas Gahan</td>
-                <td>Gahan Lucas</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 249 455-8824</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 6 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Bartolomé Bravio</td>
-                <td>Agroservicios del Este SRL</td>
-                <td>Fusé Andrés</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 2241 53-0421</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 7 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Bolivar</td>
-                <td>Muñoz Marcelo y Oscar SH</td>
-                <td>Muñoz Marcelo</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 2314 51-3017</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 8 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Burzaco</td>
-                <td>Gaser SA</td>
-                <td>Adragna Gabriel</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 6169-6402</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 9 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Cañuelas</td>
-                <td>Silajes La Promesa SA</td>
-                <td>Da Cruz José</td>
-                <td>Picado de Forrajes</td>
-                <td>+54 9 2226 52-0660</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 10 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Capitan Sarmiento</td>
-                <td>Duggan Silajes SAS</td>
-                <td>Ford Facundo</td>
-                <td>Picado de forrajes/td>
-                <td>+54 9 2326 42-0300</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 11. El boton "ver detalles" Tiene un onClick  para mostrar como ejemplo la Info del socio por separado, en la ventana modal creada mas abajo-->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Carlos Casares</td>
-                <td>Duckas SRL</td>
-                <td>Aguirre Saravia Patricio</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 2396 62-3266</td>
-                <td><button class="boton-ver-detalles" onclick="showDetails(11)">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 12 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Carlos Casares</td>
-                <td>PIC.AR SA</td>
-                <td>Picotto Alvaro</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 2395 40-7724</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 13 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Carlos Casares</td>
-                <td>Otac Servicios Agropecuarios SA</td>
-                <td>Acosta Juan Pablo</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 2395 42-2925</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 14 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Carmen de Areco</td>
-                <td>Sivori Silajes SRL</td>
-                <td>Sivori Ezequiel Ricardo</td>
-                <td>Picado de forrajes</td>
-                <td>+54 9 2325 68-8970</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-            </tr>
-            <!-- Fila 15 -->
-            <tr>
-                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
-                <td>Carmen de Areco</td>
-                <td>Pagos de Tresar SAS</td>
-                <td>Basante Felipe</td>
-                <td>Picado de forrajes</td>
-                <td>+54 3 2325 41-1685</td>
-                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
-        </tbody>
-    </table>
-
+    
+    <div class="tabla-container">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th class="provincia" onclick="sortTable(0)">Provincia</th>
+                    <th onclick="sortTable(1)">Ciudad</th>
+                    <th onclick="sortTable(2)">Empresa</th>
+                    <th onclick="sortTable(3)">Contacto</th>
+                    <th onclick="sortTable(4)">Servicio</th>
+                    <th onclick="sortTable(5)">Telefono Movil</th>
+                    <th>Detalles Socios</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>9 de Julio</td>
+                    <td>Con Rural SRL</td>
+                    <td>Feletto German</td>
+                    <td>Picado de Forrajes</td>
+                    <td>+54 9 2317 41-7410</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 2 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Ameghino</td>
+                    <td>Arina Santiago</td>
+                    <td>Arina Santiago</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 3388 46-6340</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                   
+                </tr>
+                <!-- Fila 3 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Ameguino</td>
+                    <td>Zabalegui Hnos SH</td>
+                    <td>Zabalegui Mario</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 2355 57-0222</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 4 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Ameguino</td>
+                    <td>El Mate de Ameguino SA</td>
+                    <td>Eder Juan</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 3388 67-8844</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 5 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Ayacucho</td>
+                    <td>Lucas Gahan</td>
+                    <td>Gahan Lucas</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 249 455-8824</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 6 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Bartolomé Bravio</td>
+                    <td>Agroservicios del Este SRL</td>
+                    <td>Fusé Andrés</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 2241 53-0421</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 7 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Bolivar</td>
+                    <td>Muñoz Marcelo y Oscar SH</td>
+                    <td>Muñoz Marcelo</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 2314 51-3017</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 8 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Burzaco</td>
+                    <td>Gaser SA</td>
+                    <td>Adragna Gabriel</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 6169-6402</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 9 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Cañuelas</td>
+                    <td>Silajes La Promesa SA</td>
+                    <td>Da Cruz José</td>
+                    <td>Picado de Forrajes</td>
+                    <td>+54 9 2226 52-0660</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 10 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Capitan Sarmiento</td>
+                    <td>Duggan Silajes SAS</td>
+                    <td>Ford Facundo</td>
+                    <td>Picado de forrajes/td>
+                    <td>+54 9 2326 42-0300</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 11. El boton "ver detalles" Tiene un onClick  para mostrar como ejemplo la Info del socio por separado, en la ventana modal creada mas abajo-->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Carlos Casares</td>
+                    <td>Duckas SRL</td>
+                    <td>Aguirre Saravia Patricio</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 2396 62-3266</td>
+                    <td><button class="boton-ver-detalles" onclick="showDetails(11)">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 12 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Carlos Casares</td>
+                    <td>PIC.AR SA</td>
+                    <td>Picotto Alvaro</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 2395 40-7724</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 13 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Carlos Casares</td>
+                    <td>Otac Servicios Agropecuarios SA</td>
+                    <td>Acosta Juan Pablo</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 2395 42-2925</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 14 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Carmen de Areco</td>
+                    <td>Sivori Silajes SRL</td>
+                    <td>Sivori Ezequiel Ricardo</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 9 2325 68-8970</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+                </tr>
+                <!-- Fila 15 -->
+                <tr>
+                    <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                    <td>Carmen de Areco</td>
+                    <td>Pagos de Tresar SAS</td>
+                    <td>Basante Felipe</td>
+                    <td>Picado de forrajes</td>
+                    <td>+54 3 2325 41-1685</td>
+                    <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tbody>
+        </table>
+    </div>
+    
 
 
     <!--Tabla Modal Para Cargar Informacion de Cada Socio. Info de Ejemplo del Socio Duckas SRL-->
