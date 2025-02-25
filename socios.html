@@ -4,224 +4,357 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Socios</title>
+    <link rel="stylesheet" href="CSS/socios.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/menu.js" defer></script>
+    <script src="JS/toggle.js"></script>
 </head>
-<body>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de Datos</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Listado de Empresas</h2>
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Provincia</th>
-                    <th>Ciudad</th>
-                    <th>Empresa</th>
-                    <th>Contacto</th>
-                    <th>Servicio</th>
-                    <th>Tel. Móvil</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Buenos Aires</td>
-                    <td>La Plata</td>
-                    <td>Tech Solutions</td>
-                    <td>Juan Pérez</td>
-                    <td>Consultoría IT</td>
-                    <td>+54 9 11 2345-6789</td>
-                </tr>
-                <tr>
-                    <td>Santa Fe</td>
-                    <td>Rosario</td>
-                    <td>FoodCo</td>
-                    <td>María López</td>
-                    <td>Alimentos</td>
-                    <td>+54 9 341 5678-1234</td>
-                </tr>
-                <tr>
-                    <td>Córdoba</td>
-                    <td>Córdoba</td>
-                    <td>Rubro Tech</td>
-                    <td>Pedro García</td>
-                    <td>Electrónica</td>
-                    <td>+54 9 351 9876-4321</td>
-                </tr>
-                <tr>
-                    <td>Mendoza</td>
-                    <td>Mendoza</td>
-                    <td>Vino & Cía</td>
-                    <td>Laura Fernández</td>
-                    <td>Vinos</td>
-                    <td>+54 9 261 2345-9876</td>
-                </tr>
-                <tr>
-                    <td>Neuquén</td>
-                    <td>Neuquén</td>
-                    <td>Patagonia Servicios</td>
-                    <td>Carlos Ruiz</td>
-                    <td>Servicios</td>
-                    <td>+54 9 299 6543-1234</td>
-                </tr>
-                <tr>
-                    <td>Salta</td>
-                    <td>Salta</td>
-                    <td>Auto Parts</td>
-                    <td>José Martínez</td>
-                    <td>Refacciones</td>
-                    <td>+54 9 387 4567-8910</td>
-                </tr>
-                <tr>
-                    <td>Jujuy</td>
-                    <td>San Salvador de Jujuy</td>
-                    <td>Textiles Jujuy</td>
-                    <td>Alicia Gómez</td>
-                    <td>Textiles</td>
-                    <td>+54 9 388 2345-6789</td>
-                </tr>
-                <tr>
-                    <td>Chaco</td>
-                    <td>Resistencia</td>
-                    <td>Chaco Gas</td>
-                    <td>Federico Díaz</td>
-                    <td>Gas</td>
-                    <td>+54 9 362 1234-5678</td>
-                </tr>
-                <tr>
-                    <td>Misiones</td>
-                    <td>Posadas</td>
-                    <td>GreenTech</td>
-                    <td>Patricia Torres</td>
-                    <td>Consultoría Ambiental</td>
-                    <td>+54 9 3751 2345-6789</td>
-                </tr>
-                <tr>
-                    <td>Chubut</td>
-                    <td>Comodoro Rivadavia</td>
-                    <td>PetroChubut</td>
-                    <td>Martín Paredes</td>
-                    <td>Petrolera</td>
-                    <td>+54 9 297 6543-2109</td>
-                </tr>
-                <tr>
-                    <td>Río Negro</td>
-                    <td>Viedma</td>
-                    <td>AgroViedma</td>
-                    <td>Ricardo López</td>
-                    <td>Agroindustria</td>
-                    <td>+54 9 2920 5678-3456</td>
-                </tr>
-                <tr>
-                    <td>Catamarca</td>
-                    <td>San Fernando del Valle de Catamarca</td>
-                    <td>Minerales Catamarca</td>
-                    <td>Andrés Romero</td>
-                    <td>Minería</td>
-                    <td>+54 9 383 1234-5678</td>
-                </tr>
-                <tr>
-                    <td>Formosa</td>
-                    <td>Formosa</td>
-                    <td>ElectroFormosa</td>
-                    <td>Marcela Fernández</td>
-                    <td>Electrodomésticos</td>
-                    <td>+54 9 370 9876-1234</td>
-                </tr>
-                <tr>
-                    <td>San Juan</td>
-                    <td>San Juan</td>
-                    <td>SolarTech</td>
-                    <td>Federico Aguirre</td>
-                    <td>Paneles Solares</td>
-                    <td>+54 9 264 2345-6789</td>
-                </tr>
-                <tr>
-                    <td>La Pampa</td>
-                    <td>Santa Rosa</td>
-                    <td>AgroLaPampa</td>
-                    <td>Luciana Herrera</td>
-                    <td>Agroindustria</td>
-                    <td>+54 9 2954 5678-9101</td>
-                </tr>
-                <tr>
-                    <td>San Luis</td>
-                    <td>San Luis</td>
-                    <td>Construcciones SL</td>
-                    <td>Andrés Pérez</td>
-                    <td>Construcción</td>
-                    <td>+54 9 266 2345-6789</td>
-                </tr>
-                <tr>
-                    <td>Entre Ríos</td>
-                    <td>Paraná</td>
-                    <td>Servicios Paraná</td>
-                    <td>Claudia Sánchez</td>
-                    <td>Servicios</td>
-                    <td>+54 9 343 1234-5678</td>
-                </tr>
-                <tr>
-                    <td>La Rioja</td>
-                    <td>La Rioja</td>
-                    <td>La Rioja Textil</td>
-                    <td>Mariano Gómez</td>
-                    <td>Textiles</td>
-                    <td>+54 9 380 9876-5432</td>
-                </tr>
-                <tr>
-                    <td>Tucumán</td>
-                    <td>Tucumán</td>
-                    <td>ElectroTucumán</td>
-                    <td>Ramiro Rodríguez</td>
-                    <td>Electrodomésticos</td>
-                    <td>+54 9 381 2345-6789</td>
-                </tr>
-                <tr>
-                    <td>Corrientes</td>
-                    <td>Corrientes</td>
-                    <td>AgroCorrientes</td>
-                    <td>Silvia Martínez</td>
-                    <td>Agroindustria</td>
-                    <td>+54 9 379 1234-9876</td>
-                </tr>
-                <tr>
-                    <td>Buenos Aires</td>
-                    <td>Mar del Plata</td>
-                    <td>MarTech</td>
-                    <td>Joaquín Castro</td>
-                    <td>Desarrollo Web</td>
-                    <td>+54 9 223 4567-8901</td>
-                </tr>
-                <tr>
-                    <td>Santa Cruz</td>
-                    <td>Río Gallegos</td>
-                    <td>SnowTech</td>
-                    <td>Verónica Díaz</td>
-                    <td>Tecnología</td>
-                    <td>+54 9 2966 1234-5678</td>
-                </tr>
-                <tr>
-                    <td>Entre Ríos</td>
-                    <td>Concordia</td>
-                    <td>AgroConcordia</td>
-                    <td>Enzo Rossi</td>
-                    <td>Agroindustria</td>
-                    <td>+54 9 345 6789-2345</td>
-                </tr>
-                <tr>
-                    <td>Catamarca</td>
-                    <td>Catamarca</td>
-                    <td>Minería Catamarca</td>
-                    <td>Carlos Herrera</td>
-                    <td>Minería</td>
-                    <td>+54 9 383 2345-6789</td>
-               
 
+<body>
+
+    <!--Aquí se renderiza el menú-->
+    <div id="nav">    
+    </div>
+  
     
+    <!--Encabezado o titulo de la pagina + texto-->
+    <div class="encabezado">
+        <h2>Listado de socios</h2>
+        <p>Para ordenar alfabéticamente haga click sobre el titulo de la columna</p>    
+    </div>
+
+
+        
+    <!--Tabla/lista de socios general. Info de ejemplo, primeros 15 socios de la lista original ordenada alfabeticamente, incluye funcion "sorTable()" para ordenar alfabeticamente, a modo de muestra-->
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th class="provincia" onclick="sortTable(0)">Provincia</th>
+                <th onclick="sortTable(1)">Ciudad</th>
+                <th onclick="sortTable(2)">Empresa</th>
+                <th onclick="sortTable(3)">Contacto</th>
+                <th onclick="sortTable(4)">Servicio</th>
+                <th onclick="sortTable(5)">Telefono Movil</th>
+                <th>Detalles Socios</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>9 de Julio</td>
+                <td>Con Rural SRL</td>
+                <td>Feletto German</td>
+                <td>Picado de Forrajes</td>
+                <td>+54 9 2317 41-7410</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 2 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Ameghino</td>
+                <td>Arina Santiago</td>
+                <td>Arina Santiago</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 3388 46-6340</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+               
+            </tr>
+            <!-- Fila 3 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Ameguino</td>
+                <td>Zabalegui Hnos SH</td>
+                <td>Zabalegui Mario</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 2355 57-0222</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 4 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Ameguino</td>
+                <td>El Mate de Ameguino SA</td>
+                <td>Eder Juan</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 3388 67-8844</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 5 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Ayacucho</td>
+                <td>Lucas Gahan</td>
+                <td>Gahan Lucas</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 249 455-8824</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 6 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Bartolomé Bravio</td>
+                <td>Agroservicios del Este SRL</td>
+                <td>Fusé Andrés</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 2241 53-0421</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 7 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Bolivar</td>
+                <td>Muñoz Marcelo y Oscar SH</td>
+                <td>Muñoz Marcelo</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 2314 51-3017</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 8 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Burzaco</td>
+                <td>Gaser SA</td>
+                <td>Adragna Gabriel</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 6169-6402</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 9 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Cañuelas</td>
+                <td>Silajes La Promesa SA</td>
+                <td>Da Cruz José</td>
+                <td>Picado de Forrajes</td>
+                <td>+54 9 2226 52-0660</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 10 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Capitan Sarmiento</td>
+                <td>Duggan Silajes SAS</td>
+                <td>Ford Facundo</td>
+                <td>Picado de forrajes/td>
+                <td>+54 9 2326 42-0300</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 11. El boton "ver detalles" Tiene un onClick  para mostrar como ejemplo la Info del socio por separado, en la ventana modal creada mas abajo-->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Carlos Casares</td>
+                <td>Duckas SRL</td>
+                <td>Aguirre Saravia Patricio</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 2396 62-3266</td>
+                <td><button class="boton-ver-detalles" onclick="showDetails(11)">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 12 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Carlos Casares</td>
+                <td>PIC.AR SA</td>
+                <td>Picotto Alvaro</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 2395 40-7724</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 13 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Carlos Casares</td>
+                <td>Otac Servicios Agropecuarios SA</td>
+                <td>Acosta Juan Pablo</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 2395 42-2925</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 14 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Carmen de Areco</td>
+                <td>Sivori Silajes SRL</td>
+                <td>Sivori Ezequiel Ricardo</td>
+                <td>Picado de forrajes</td>
+                <td>+54 9 2325 68-8970</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+            </tr>
+            <!-- Fila 15 -->
+            <tr>
+                <td><img src="imagenes/bandera argentina/argentina.png"> Buenos Aires</td>
+                <td>Carmen de Areco</td>
+                <td>Pagos de Tresar SAS</td>
+                <td>Basante Felipe</td>
+                <td>Picado de forrajes</td>
+                <td>+54 3 2325 41-1685</td>
+                <td><button class="boton-ver-detalles">Detalle Socios</button></td>
+        </tbody>
+    </table>
+
+
+
+    <!--Tabla Modal Para Cargar Informacion de Cada Socio. Info de Ejemplo del Socio Duckas SRL-->
+
+    <div id="dataModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">x</span>
+            <table class="table-modal">
+                <tbody>
+                    <!-- Logo y pais-->
+                     <tr>
+                        <td><img class="bandera-modal" src="imagenes/bandera argentina/bandera-argentina2.png"><span style="font-size:20px; font-weight:400">ARGENTINA</span></td>
+                     </tr>
+                    <tr>
+                        <td colspan="1" class="center">
+                            <img src="imagenes/logos/Duckas.png" alt="Logo" class="logo">
+                        </td>
+                    </tr>
+                    <!-- Empresa -->
+                    <tr class="tr">
+                        <th class="th">Empresa:</td>
+                        <td>Duckas SRL</td>
+                    </tr>
+                    <!-- Contacto -->
+                    <tr class="tr">
+                        <td class="th">Contacto:</td>
+                        <td>Aguirre Saravia Patricio</td>
+                    </tr>
+                    <!-- Dirección -->
+                    <tr class="tr">
+                        <td class="th">Dirección:</td>
+                        <td>Lisandro de la Torre 125</td>
+                    </tr>
+                    <!-- Ciudad -->
+                    <tr class="tr">
+                        <td class="th">Ciudad:</td>
+                        <td>Carlos Casares</td>
+                    </tr>
+                    <!-- Provincia -->
+                    <tr class="tr">
+                        <td class="th">Provincia:</td>
+                        <td>Buenos Aires</td>
+                    </tr>
+                    <!-- Código Postal -->
+                    <tr class="tr">
+                        <td class="th">Código Postal:</td>
+                        <td>6530</td>
+                    </tr>
+                    <!-- Teléfono Móvil -->
+                    <tr class="tr">
+                        <td class="th">Teléfono Móvil:</td>
+                        <td>+54 9 2396 62-3266</td>
+                    </tr>
+                    <!-- Teléfono Fijo -->
+                    <tr class="tr">
+                        <td class="th">Tel. Fijo:</td>
+                        <td>(02395) 450060</td>
+                    </tr>
+                    <!-- Email -->
+                    <tr class="tr">
+                        <td class="th">Email:</td>
+                        <td>patricio@duckas.com.ar</td>
+                    </tr>
+                    <!-- Página Web -->
+                    <tr class="tr">
+                        <td class="th">Página Web:</td>
+                        <td>http://www.duckas.com.ar/</td>
+                    </tr>
+                    <!-- Picadora - Marca -->
+                    <tr class="tr">
+                        <td class="th">Picadora  Marca:</td>
+                        <td>CLASS</td>
+                        <td>CLASS</td>
+                        <td>CLASS</td>
+                        <td>CLASS</td>
+                        <td>CLASS</td>
+                    </tr>
+                    <!-- Picadora - Modelo -->
+                    <tr class="tr">
+                        <td class="th">Picadora - Modelo:</td>
+                        <td>Jaguar 980</td>
+                        <td>Jaguar 980</td>
+                        <td>Jaguar 980</td>
+                        <td>Jaguar 960</td>
+                        <td>Jaguar 990</td>
+                    </tr>
+                    <!-- Cabezal - Marca y Modelo -->
+                    <tr class="tr">
+                        <td class="th">Cabezal - Marca y Modelo:</td>
+                        <td>CLAAS - ORBIS 900 Seaflex</td>
+                        <td>CLAAS - ORBIS 900</td>
+                        <td>CLAAS - ORBIS 750 Seaflex</td>
+                        <td>KRONE - Easycollect 900</td>
+                        <td>KRONE - Easycollect 900</td>
+                        <td>CLAAS - PU 300</td>
+                        
+                    </tr>
+                    <!-- Embolsadora -->
+                    <tr class="tr">
+                        <td class="th">Embolsadora:</td>
+                        <td>AGBAG-8100</td>
+                        <td>Green Pac - 10-250</td>
+                        <td>Green Pac - 9-180</td>
+                        <td>Green Pac - 9-180</td>
+                        <td>Green Pac - 9-180</td>
+                        
+                    </tr>
+                
+                    <!-- Tractor -->
+                    <tr class="tr">
+                        <td class="th">Tractor:</td>
+                        <td>6</td>
+                    </tr>
+                    <!-- Bateas -->
+                    <tr class="tr">
+                        <td class="th">Bateas:</td>
+                        <td>3</td>
+                    </tr>
+                    <!-- Carros -->
+                    <tr class="tr">
+                        <td class="th">Carros:</td>
+                        <td>6</td>
+                    </tr>
+                    <!-- Camiones -->
+                    <tr class="tr">
+                        <td class="th">Camiones:</td>
+                        <td>25</td>
+                    </tr>
+                    <!-- Casillas -->
+                    <tr class="tr">
+                        <td class="th">Casillas:</td>
+                        <td>12</td>
+                    </tr>
+                    <!-- Carretones -->
+                    <tr class="tr">
+                        <td class="th">Carretones:</td>
+                        <td>6</td>
+                    </tr>
+                    <!-- Varios -->
+                    <tr class="tr">
+                        <td class="th">Varios:</td>
+                        <td>Equipamiento para pasturas: Todas las picadoras tienen recolectores de pasturas, más 1 cabezal Direct Disc para corte directo; 2 rastrillos Claas Liner Twin 1550; 1 Cortahileradora New Holland 1411; 1 Cortahileradora automotriz New Holland modelo 8060 c cabezal de corte de discos y otro de corte secuencial para alfalfas ó variedades de semillas.; 1 Cortahileradora automotriz New Holland modelo HW 340 c cabezal de corte de discos.; 2 Cortahileradoras automotrices New Holland modelo 1118 c cabezal de corte secuencial.; 1 Cabezal Claas Corto 8100 de 8,10 mts ancho de labor con corte de discos.; 4 Tractores de 115 hp para corte e hilerado.; 1 Mega enfardadora New Holand BB 9070, para fardos de hasta 1 ton. 2 Camiones para servicio en el campo con equipo completo de lubricación por aire comprimido, generadores 220/380v; 2 Torres de iluminación con generador propio para trabajos nocturnos;2 Carretones semirremolque para traslado de equipos.; 7 camionetas para apoyo logístico, todas las máquinas y equipos con comunicación VHF.; 2 Camiones regadores con tanque de 8000 lts c/u; 1 Motoniveladora Caterpillar; 1 Retroexcavadora sobre orugas, Caterpillar 215; 1 Topadora de orugas D 5; 2 Retropalas Caterpillar 416; 3 Grupos electrógenos portatiles de 40 kva c/u.</td>
+                    </tr>
+                    
+                    <!--Link para Imprimir y Boton para volver a listado-->
+                
+                    <tr class="tr">
+                        <td>Imprimir</td>
+                        <td id="volverListado" class="volver-listado">Volver al Listado</td>
+                    </tr>
+                </tbody> 
+
+            </div>
+        </table>
+            
+    </div>
+
+    <script src="JS/showDetails.js"></script>
+    <script src="JS/sortTable.js"></script>
+
+</body>
+</html>
+
 </body>
 </html>

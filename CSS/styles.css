@@ -210,8 +210,12 @@ h1{
     grid-column: span 2;
     display: flex;
     justify-content: center;
-    margin-top: 50px; 
-    margin-bottom: 50px; 
+    margin-top: 100px; 
+}
+
+.banner-blade{
+    width: 550px;
+    height: auto;
 }
 
 .segunda-fila {
@@ -224,6 +228,8 @@ h1{
     gap: 10px; 
     width: 100vw; 
     box-sizing: border-box; 
+    margin-top: 150px;
+
 }
 
 .segunda-fila li{
@@ -354,6 +360,7 @@ h1{
     gap: 100px;
     background-color: #d1d1d6;
     min-height: 100vh;
+    margin-top: 150px;
 }
 
 .localizar-socios{
@@ -388,6 +395,7 @@ footer{
     justify-content: space-between;
     background-color: black;
     padding: 20px;
+    height: 120px;
 }
 
 .icono-redes, h4{
@@ -397,20 +405,37 @@ footer{
 .logo-footer{
     align-items: center;
     text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+footer p{
+    font-size: 20px;
+    color:#fff;
+    margin-left: 8px;
 }
 
 .redes-sociales{
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 .icono-redes{
-    padding: 20px;
+    padding: 3px 7px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
 }
 
 h4{
     font-weight: 300;
     padding-bottom: 10px;
+}
+
+.redes-sociales{
+    padding-top: 10px;
 }
 
 /* Responsividad: Pantallas medianas (hasta 768px) */
@@ -425,6 +450,11 @@ h4{
     .grid-container {
         grid-template-columns: 1fr;
         overflow: hidden; 
+    }
+
+    .logo{
+        width: 140px;
+        height: 40;
     }
 
     .textos {
@@ -643,8 +673,8 @@ h4{
     }
     
     .localizar-socios{
-        font-size: 30px;
-        margin-top: 50px;
+        font-size: 20px;
+        margin-top: 35px;
     }
     
     .estilos-mapa{
