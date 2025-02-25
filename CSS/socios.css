@@ -125,7 +125,7 @@ img{
     text-align: center; 
 }
 
-.logo {
+.logo-duckas {
     width: 200px;
     height: 300px;
     align-items: center;
@@ -211,7 +211,7 @@ h5 {
         max-width: 100%; 
     }
 
-    .logo {
+    .logo-duckas {
         width: 80px;  
         margin: 0 auto;
         display: block;
@@ -269,7 +269,7 @@ h5 {
         max-width: 100%; 
     }
 
-    .logo {
+    .logo-duckas {
         width: 80px;  
         margin: 0 auto;
         display: block;
