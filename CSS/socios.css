@@ -76,13 +76,7 @@ img{
     cursor: pointer;
 }
 
-.tabla-container {
-    max-width: 100%;
-    max-height: 550px;
-    overflow-x: auto;
-    overflow-y: auto; 
-    margin-top: 20px; 
-}
+
 
 /* Opcional: Para que el scroll se vea mejor */
 .tabla-container::-webkit-scrollbar {
@@ -198,6 +192,14 @@ h5 {
         overflow-y: auto; 
     }
 
+    .tabla-container {
+        max-width: 100%;
+        max-height: 550px;
+        overflow-x: auto;
+        overflow-y: auto; 
+        margin-top: 20px; 
+    }
+
     .table-modal {
         width: 100%; 
         height: auto;
@@ -254,6 +256,14 @@ h5 {
         border-radius: 0; 
         box-sizing: border-box;
         overflow-y: auto; 
+    }
+
+    .tabla-container {
+        max-width: 100%;
+        max-height: 550px;
+        overflow-x: auto;
+        overflow-y: auto; 
+        margin-top: 20px; 
     }
 
     .table-modal {
