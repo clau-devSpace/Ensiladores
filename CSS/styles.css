@@ -698,6 +698,7 @@ h4{
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+        height: 200px;
     }
 
 }

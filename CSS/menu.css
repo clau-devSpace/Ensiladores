@@ -84,9 +84,10 @@ nav{
         top: 0;
         left: 0;
         right:0 ;
-        max-width: 100%;
+        max-width: 100vw;
         height: 65px;
         overflow-x: hidden;
+        flex-wrap: wrap;
     }
 
 }
