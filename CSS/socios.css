@@ -37,7 +37,7 @@ h2{
 }
 
 th, td {
-    padding: 12px;
+    padding: 8px;
     text-align: center;
     border: 1px solid #d3d3d3; 
 }
@@ -46,11 +46,11 @@ th {
     cursor: pointer; 
     border: none;
     border-bottom: 2px solid #a9a9a9; 
-    font-size: 17px;
+    font-size: 16px;
 }
 
 td{
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     border-bottom: 1px solid #a9a9a9;
     
@@ -79,7 +79,7 @@ img{
 
 .tabla-container {
     max-width: 100%;
-    max-height: auto;
+    max-height: 600px;
     overflow-x: auto;
     overflow-y: auto; 
     margin-top: 20px; 
