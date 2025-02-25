@@ -78,11 +78,10 @@ img{
 }
 
 .tabla-container {
-    max-width: 100%; /* Asegura que se ajuste al ancho de la pantalla */
-    overflow-x: auto; /* Permite desplazamiento horizontal */
-    overflow-y: auto; /* Permite desplazamiento vertical */
-    max-height: 400px; /* Ajusta según sea necesario */
-    margin-top: 20px; /* Espaciado opcional */
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: auto; 
+    margin-top: 20px; 
 }
 
 /* Opcional: Para que el scroll se vea mejor */
@@ -229,12 +228,12 @@ h5 {
     }
 
     h2{
-        margin-top: 50px;
-        font-size: 15px;
+        margin-top: 100px;
+        font-size: 16px;
     }
     
     .encabezado p{
-        font-size: 13px;
+        font-size: 14px;
     }
 
 
