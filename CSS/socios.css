@@ -239,7 +239,10 @@ h5 {
     th, td {
         padding: 5px;
     }
-
+    
+    #myTable{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 768px) {
