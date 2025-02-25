@@ -10,6 +10,7 @@ body {
     font-family: "Nunito", serif;
     margin: 20px;
     background-color: #f8f8f8;
+    overflow-x: hidden;
 }
 
 h2{
@@ -32,6 +33,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
+    overflow-x: auto;
 }
 
 th, td {
