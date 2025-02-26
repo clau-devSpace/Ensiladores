@@ -68,6 +68,7 @@ h1{
 .logo{
     width: 150px;
     height: 50px;
+    padding-left: 10px;
 }
 
 .convenios{
@@ -228,7 +229,7 @@ h1{
     gap: 10px; 
     width: 100vw; 
     box-sizing: border-box; 
-    margin-top: 150px;
+    margin-top: 100px;
 
 }
 
@@ -360,7 +361,7 @@ h1{
     gap: 100px;
     background-color: #d1d1d6;
     min-height: 100vh;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .localizar-socios{
@@ -394,8 +395,9 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: black;
-    padding: 20px;
+    padding: 15px;
     height: 120px;
+    vertical-align: middle;
 }
 
 .icono-redes, h4{
@@ -403,9 +405,7 @@ footer{
 }
 
 .logo-footer{
-    align-items: center;
-    text-align: center;
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
