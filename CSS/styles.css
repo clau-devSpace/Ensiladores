@@ -153,6 +153,7 @@ h1{
     max-width: 100%; 
     height: auto; 
     border-radius: 8px; 
+    
 }
 
 /* Estilo para los elementos de la lista */
@@ -311,9 +312,10 @@ h1{
     width: 190px; /* Tamaño fijo para cada imagen */
     height: 190px; /* Tamaño fijo para cada imagen */
     padding: 5px; 
-    border-radius: 20%;
+    border-radius: 15%;
     box-sizing: border-box; 
     margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-btn {
@@ -392,12 +394,14 @@ h1{
 /*Estilos Footer*/
 
 footer{
+    display: grid; 
+    place-items: center; 
     display: flex;
     justify-content: space-between;
     background-color: black;
     padding: 15px;
     height: 120px;
-    vertical-align: middle;
+    margin:  0 auto;
 }
 
 .icono-redes, h4{
@@ -413,12 +417,14 @@ footer p{
     font-size: 20px;
     color:#fff;
     margin-left: 8px;
+    line-height: 1.2;
 }
 
 .redes-sociales{
     align-items: center;
     text-align: center;
     gap: 10px;
+    padding-right: 7px;
 }
 
 .icono-redes{
