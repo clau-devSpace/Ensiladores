@@ -78,14 +78,15 @@ h1{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto; 
     padding: 20px;
     justify-items: center; 
     align-items: center;
     background-color: #d1d1d6;
     margin-top: 100px;
+    justify-content: space-around;
 }
-
 
 .textos {
     display: grid;
@@ -444,146 +445,8 @@ h4{
     padding-top: 10px;
 }
 
-/* Responsividad: Pantallas medianas a grandes (hasta 1200px) */
-@media (max-width: 1200px){
-   
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr; /* Una columna para el contenido principal */
-        grid-template-rows: auto auto; /* Dos filas: una para textos y otra para imágenes */
-        gap: 20px; /* Espacio entre filas */
-        overflow: hidden;
-    }
 
-    .textos {
-        display: flex; /* Usar flex para el contenido de textos */
-        justify-content: space-around; /* Espacio entre columnas */
-        margin-left: 150px;
-    }
-    
-    .imagenes {
-        display: flex; /* Usar flex para las imágenes */
-        flex-direction: row;
-        justify-content: space-around; /* Espacio entre imágenes */
-    }
-
-}
-
-/* Responsividad: Pantallas medianas (hasta 768px) */
-@media (max-width: 768px) {
-
-    header{
-        min-height: 80vh;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-        overflow: hidden; 
-    }
-
-    .logo{
-        width: 140px;
-        height: 40;
-    }
-
-    .textos {
-        grid-template-columns: 1fr; 
-        width: 100%;
-        margin: auto;
-    }
-
-    h1{
-        font-size: 40px;
-    }
-
-    .h2-convenios{
-        font-size: 35px;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
-
-    .columna-parrafos {
-        width: 60%;
-        height: auto; 
-        padding: 10px;
-        margin: 0 auto;
-    }
-
-    .columna-parrafos p{
-        font-size: 15px;
-    }
-
-    .columna-parrafos::before {
-        top: 2px; /* Línea blanca a 10px del borde superior */
-    }
-    
-    /* Línea abajo */
-    .columna-parrafos::after {
-        bottom: 2px; /* Línea blanca a 10px del borde inferior */
-    }
-
-    .textos li { 
-        font-size: 18px;
-    }
-
-    .columna-lista {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .secciones{
-        font-size: 25px;
-        padding-bottom: 10px;
-     }
-     
-     .imagenes {
-        padding-top: 30px;
-    }
-
-    .titulo p{
-        font-weight: 400;
-        font-size: 15px;
-    }
-
-    .mapa{
-        flex-direction: column;
-        gap: 30px;
-        min-height: 80vh;
-    }
-    
-    .localizar-socios{
-        font-size: 30px;
-    }
-    
-    .estilos-mapa{
-        border-radius: 0;
-        margin-top: 0;
-        margin-bottom: 50px;
-        width: 100%;
-        height: auto;
-    }
-    
-    .localizar-socios{
-        font-size: 30px;
-    }
-
-    .localizar-socios::after{
-        width: 100px;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
-
-}
-
-/* Responsividad: Pantallas medianas (hasta 768px) */
-@media (max-width: 480px) {
+@media (max-width: 576px) {
 
     header{
         min-height: 100vh;
@@ -731,6 +594,160 @@ h4{
     }
 
 }
+/* Responsividad: Pantallas medianas a grandes (hasta 1200px) */
+@media (max-width: 1200px){
+   
+    .grid-container {
+        overflow: hidden;
+        gap: 30px;
+    }
+
+    .textos {
+        margin-left: 120px;
+    }
+
+    .textos li {
+        margin-bottom: 8px; 
+        font-size: 17px;
+    }
+
+    .columna-parrafos p{
+        font-size: 13px;
+    }
+
+    .columna-parrafos{
+      width: 250px;
+      height: 250px;
+      text-align: center;
+      justify-content: center;
+    }
+
+
+}
+
+/* Responsividad: Pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+
+    header{
+        min-height: 80vh;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; /* Dos filas: una para textos y otra para imágenes */
+        gap: 20px; /* Espacio entre filas */
+        overflow: hidden; 
+    }
+
+    .logo{
+        width: 140px;
+        height: 40;
+    }
+
+    .textos {
+        margin-left: 0;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .h2-convenios{
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .columna-parrafos {
+        /*width: 60%;
+        height: auto; */
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .columna-parrafos p{
+        font-size: 15px;
+    }
+
+    .columna-parrafos::before {
+        top: 2px; /* Línea blanca a 10px del borde superior */
+    }
+    
+    /* Línea abajo */
+    .columna-parrafos::after {
+        bottom: 2px; /* Línea blanca a 10px del borde inferior */
+    }
+
+    .textos li { 
+        font-size: 18px;
+    }
+
+    .columna-lista {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .secciones{
+        font-size: 25px;
+        padding-bottom: 10px;
+     }
+
+     .imagenes {
+        display: flex; 
+        flex-direction: row;
+        gap: 20px; 
+        justify-content: center; 
+        align-items: center; 
+    }
+     
+     .imagenes {
+        padding-top: 30px;
+    }
+
+    .titulo p{
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .mapa{
+        flex-direction: column;
+        gap: 30px;
+        min-height: 80vh;
+    }
+    
+    .localizar-socios{
+        font-size: 30px;
+    }
+    
+    .estilos-mapa{
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .localizar-socios{
+        font-size: 30px;
+    }
+
+    .localizar-socios::after{
+        width: 100px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
+/* Responsividad: Pantallas medianas (hasta 768px) */
+
 
 
 
