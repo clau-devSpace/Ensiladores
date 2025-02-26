@@ -246,22 +246,20 @@ background-color: #f1f1f1;
         max-width: 100%;
     }
 
-   /* .modal-content {
-        width: 100%; /*aca antes puse 60 y funcionaba
+    .table-modal td, .table-modal th {
+        padding: 2px;
+        /*word-wrap: break-word; */
+        width: 100%; 
+    }
+
+    .modal-content {
+        width: 100%; 
         height: 100%; 
         margin: 0;
         padding: 10px;
         border-radius: 0; 
         box-sizing: border-box;
         overflow-y: auto; 
-    }
-
-    
-
-    .table-modal td, .table-modal th {
-        padding: 2px;
-        /*word-wrap: break-word; 
-        width: 100%; 
     }
 
     .logo-duckas {
@@ -275,11 +273,10 @@ background-color: #f1f1f1;
     }
 
     .modal {
-        /*display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
-    }*/
-
+    }
     
 }
 
@@ -305,7 +302,8 @@ background-color: #f1f1f1;
         word-wrap: break-word; 
         max-width: 100%; 
     }
-    /*.modal-content {
+    
+    .modal-content {
         width: 50%;
         height: 100%; 
         margin: 0;
@@ -314,8 +312,6 @@ background-color: #f1f1f1;
         box-sizing: border-box;
         overflow-y: auto; 
     }
-
-    
 
     .logo-duckas {
         width: 80px;  
@@ -328,10 +324,10 @@ background-color: #f1f1f1;
     }
 
     .modal {
-        /*display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
-    }*/
+    }
 
 }
 
