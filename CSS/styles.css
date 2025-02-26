@@ -489,6 +489,7 @@ h4{
 
     .grid-container {
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
         gap: 20px; /* Espacio entre filas */
         overflow: hidden; 
     }
@@ -610,6 +611,7 @@ h4{
     .grid-container {
         grid-template-columns: 1fr; 
         overflow: hidden;
+        margin-top: 50px;
     }
 
      .textos {
@@ -634,6 +636,8 @@ h4{
 
     .h2-convenios{
         font-size: 25px;
+        padding-top: 0;
+        margin-top: 50px;
     }
 
     .columna-parrafos {
@@ -685,12 +689,20 @@ h4{
         padding-right: 5px;
     }
 
+    .segunda-fila{
+        margin-top: 50px;
+    }
+
+    .banner-grande{
+        margin-top: 50px;
+    }
+
     .segunda-fila li{
         font-size: 15px;
     }
 
     .contenido-agrinir img {
-        max-width: 280px;
+        max-width: 350px;
         height: auto;
     }
 
@@ -714,9 +726,10 @@ h4{
     }
 
     .mapa{
+        margin-top: 50px;
+        margin-bottom: 50px;
         flex-direction: column;
-        gap: 30px;
-        /*min-height: 80vh;*/
+        gap: 20px;
     }
     
     .localizar-socios{
