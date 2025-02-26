@@ -444,7 +444,30 @@ h4{
     padding-top: 10px;
 }
 
-/* Responsividad: Pantallas medianas (hasta 768px) */
+/* Responsividad: Pantallas medianas a grandes (hasta 1200px) */
+@media (max-width: 1200px){
+   
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna para el contenido principal */
+        grid-template-rows: auto auto; /* Dos filas: una para textos y otra para imágenes */
+        gap: 20px; /* Espacio entre filas */
+        overflow: hidden;
+    }
+
+    .textos {
+        display: flex; /* Usar flex para el contenido de textos */
+        justify-content: space-around; /* Espacio entre columnas */
+        margin-left: 150px;
+    }
+    
+    .imagenes {
+        display: flex; /* Usar flex para las imágenes */
+        flex-direction: row;
+        justify-content: space-around; /* Espacio entre imágenes */
+    }
+
+}
 
 /* Responsividad: Pantallas medianas (hasta 768px) */
 @media (max-width: 768px) {
