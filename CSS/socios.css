@@ -210,6 +210,31 @@ background-color: #f1f1f1;
 /*Media Query para pantallas pequeñas (480px o menos) */
 @media (max-width: 480px) {
 
+    .tabla-container {
+        max-width: 100%;
+        max-height: 550px;
+        overflow-x: auto;
+        overflow-y: auto; 
+        margin-top: 20px; 
+    }
+
+    h2{
+        margin-top: 100px;
+        font-size: 16px;
+    }
+
+    .encabezado p{
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    #myTable{
+        margin-top: 10px;
+    }
+
    /* .modal-content {
         width: 100%; /*aca antes puse 60 y funcionaba
         height: 100%; 
@@ -218,14 +243,6 @@ background-color: #f1f1f1;
         border-radius: 0; 
         box-sizing: border-box;
         overflow-y: auto; 
-    }
-
-    .tabla-container {
-        max-width: 100%;
-        max-height: 550px;
-        overflow-x: auto;
-        overflow-y: auto; 
-        margin-top: 20px; 
     }
 
     .table-modal {
@@ -257,29 +274,20 @@ background-color: #f1f1f1;
         align-items: center;
     }
 
-    h2{
-        margin-top: 100px;
-        font-size: 16px;
-    }
-    
-    .encabezado p{
-        font-size: 14px;
-    }
-
-    th, td {
-        padding: 5px;
-    }
-    
-    #myTable{
-        margin-top: 10px;
-    }
-
     .modal__container{
         max-width: 100%;
-    }
+    }*/
 }
 
 @media (max-width: 768px) {
+
+    .tabla-container {
+        max-width: 100%;
+        max-height: 550px;
+        overflow-x: auto;
+        overflow-y: auto; 
+        margin-top: 20px; 
+    }
     /*.modal-content {
         width: 50%;
         height: 100%; 
@@ -288,14 +296,6 @@ background-color: #f1f1f1;
         border-radius: 0; 
         box-sizing: border-box;
         overflow-y: auto; 
-    }
-
-    .tabla-container {
-        max-width: 100%;
-        max-height: 550px;
-        overflow-x: auto;
-        overflow-y: auto; 
-        margin-top: 20px; 
     }
 
     .table-modal {
