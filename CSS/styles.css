@@ -489,7 +489,7 @@ h4{
 
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto;
         gap: 20px; /* Espacio entre filas */
         overflow: hidden; 
     }
@@ -600,7 +600,7 @@ h4{
     }
 }
 
-/* Responsividad: Pantallas medianas (hasta 768px) */
+/* Responsividad: Pantallas pequeñas (hasta 768px) */
 
 @media (max-width: 576px) {
 
