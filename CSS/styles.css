@@ -480,6 +480,9 @@ h4{
     .segunda-fila{
         margin-top: 50px;
     }
+    .segunda-fila li{
+        font-size: 17px;
+    }
     .banner-grande{
         margin-top: 50px;
     }
@@ -569,7 +572,7 @@ h4{
     }
     .textos li {
         margin-bottom: 8px; 
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 400;
         color: #575757;
         cursor: pointer;
