@@ -634,7 +634,6 @@ h4{
 
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto; /* Dos filas: una para textos y otra para imágenes */
         gap: 20px; /* Espacio entre filas */
         overflow: hidden; 
     }
