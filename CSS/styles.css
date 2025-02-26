@@ -593,6 +593,12 @@ h4{
         height: 200px;
     }
 
+    .imagenes {
+        display: flex; 
+        flex-direction: column;
+    }
+     
+
 }
 /* Responsividad: Pantallas medianas a grandes (hasta 1200px) */
 @media (max-width: 1200px){
