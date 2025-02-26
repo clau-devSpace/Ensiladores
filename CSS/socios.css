@@ -210,8 +210,8 @@ background-color: #f1f1f1;
 /*Media Query para pantallas pequeñas (480px o menos) */
 @media (max-width: 480px) {
 
-    .modal-content {
-        width: 100%; /*aca antes puse 60 y funcionaba*/
+   /* .modal-content {
+        width: 100%; /*aca antes puse 60 y funcionaba
         height: 100%; 
         margin: 0;
         padding: 10px;
@@ -237,7 +237,7 @@ background-color: #f1f1f1;
 
     .table-modal td, .table-modal th {
         padding: 2px;
-        /*word-wrap: break-word; */
+        /*word-wrap: break-word; 
         width: 100%; 
     }
 
@@ -252,7 +252,7 @@ background-color: #f1f1f1;
     }
 
     .modal {
-        /*display: flex;*/
+        /*display: flex;
         justify-content: center;
         align-items: center;
     }
