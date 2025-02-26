@@ -5,21 +5,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #edebe6;
 }
-
 header{
     min-height: 100vh;
     background-image: url(/imagenes/imagenes_de_fondo/fondo.jpg);
     background-size: cover;
     background-position: center;
 }
-
 h1{
     font-family: "Fira Sans";
     font-weight: 400;
@@ -31,11 +27,9 @@ h1{
     justify-content: center;
     padding-top: 200px;
 }
-
 .animacion1{
     animation-duration: 1.5s;
 }
-
 .h2-convenios{
     font-size: 40px;
     font-weight: 400;
@@ -49,7 +43,6 @@ h1{
     flex-direction: column;
     align-items: center;
 }
-
 .h2-convenios::after{
     content: ""; 
     height: 2px;
@@ -57,7 +50,6 @@ h1{
     background-color: #9c7b43; 
     margin-top: 10px;  /* Puedes ajustar el margen para separarlo del texto */
 }
-
 .titulo p{
     font-family: "Fira Sans";
     font-weight: 300;
@@ -66,13 +58,11 @@ h1{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.10);
     text-align: center;
 }
-
 .logo{
     width: 150px;
     height: 50px;
     padding-left: 10px;
 }
-
 .convenios{
     background-color: #e0e0e0;
 }
@@ -89,7 +79,6 @@ h1{
     margin-top: 100px;
     justify-content: space-around;
 }
-
 .textos {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -99,13 +88,11 @@ h1{
     justify-content: center;
     margin-left: 250px;
 }
-
 .columna-lista {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .columna-parrafos {
     background-color: #295996; 
     color: white; 
@@ -120,7 +107,6 @@ h1{
     box-sizing: border-box; 
     position: relative;
 }
-
 .columna-parrafos::before, .columna-parrafos::after {
     content: ""; 
     position: absolute;
@@ -129,17 +115,14 @@ h1{
     height: 1px;
     background-color: white; 
 }
-
 /* Línea arriba */
 .columna-parrafos::before {
     top: 10px; /* Línea blanca a 10px del borde superior */
 }
-
 /* Línea abajo */
 .columna-parrafos::after {
     bottom: 10px; /* Línea blanca a 10px del borde inferior */
 }
-
 .imagenes {
     display: flex; 
     flex-direction: column;
@@ -150,22 +133,17 @@ h1{
     margin: 0;
     width: auto;
 }
-
-
 .imagenes img {
     max-width: 100%; 
     height: auto; 
     border-radius: 8px; 
-    
 }
-
 /* Estilo para los elementos de la lista */
 .textos ul {
     list-style-type: none;
     padding: 0;
     color: #295996;
 }
-
 .textos li {
     margin-bottom: 8px; 
     font-size: 20px;
@@ -173,19 +151,16 @@ h1{
     color: #575757;
     cursor: pointer;
 }
-
 .icono-check{
     font-size: 30px;
     color:#295996;
     vertical-align: middle;
 }
-
 /* Estilo de los encabezados */
 .cartelera{
     margin-bottom: 15px; 
     font-size: 1.5em;
 }
-
 .secciones{
    margin-top: 10px; 
    font-size: 35px;
@@ -193,11 +168,7 @@ h1{
    font-weight: 400;
    padding-bottom: 10px;
 }
-
-
-
 /*Estilos segunda grid*/
-
 .agrinir {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -210,7 +181,6 @@ h1{
     box-sizing: border-box; 
     overflow: hidden;
 }
-
 /* Hace que el banner ocupe las dos columnas */
 .banner-grande {
     grid-column: span 2;
@@ -218,12 +188,10 @@ h1{
     justify-content: center;
     margin-top: 100px; 
 }
-
 .banner-blade{
     width: 550px;
     height: auto;
 }
-
 .segunda-fila {
     background-image: url(/imagenes/imagenes_de_fondo/jszxwfnp.png); 
     background-position: center;
@@ -235,15 +203,12 @@ h1{
     width: 100vw; 
     box-sizing: border-box; 
     margin-top: 100px;
-
 }
-
 .segunda-fila li{
     color: #575757;
     font-weight: 400;
     font-size: 20px;
 }
-
 .contenido-agrinir {
     display: flex;
     flex-direction: column;
@@ -253,14 +218,12 @@ h1{
     width: auto; 
     max-width: 100%; 
 }
-
 .contenido-agrinir img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
     border-radius: 5px;
 }
-
 .imagen-equipo {
     display: flex;
     justify-content: center;
@@ -268,18 +231,13 @@ h1{
     height: 100%;
     max-width: 50%; 
 }
-
-
 .imagen-equipo img {
     max-width: 100%;
     height: auto;
 }
-
-
 .contenido-agrinir ul{
     list-style: none;
 }
-
 .contenido-agrinir li{
     cursor: pointer;
 }
@@ -287,7 +245,6 @@ h1{
     color: red;
     font-size: 20px;
 }
-
 
 /* Estilos para el carrusel */
 
@@ -299,19 +256,16 @@ h1{
     margin: 0 auto; 
     text-align: center; 
 }
-
 .carousel {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     overflow: hidden; 
 }
-
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease;
 }
-
 .carousel-item {
     width: 190px; /* Tamaño fijo para cada imagen */
     height: 190px; /* Tamaño fijo para cada imagen */
@@ -321,7 +275,6 @@ h1{
     margin-right: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 .carousel-btn {
     color: #9c7b43;
     border: none;
@@ -332,11 +285,9 @@ h1{
     z-index: 1;
     margin: 10px; 
 }
-
 .carousel-btn:hover{
     color:#295996;
 }
-
 .carousel-btns {
     display: flex; 
     justify-content: center;
@@ -351,12 +302,10 @@ h1{
     transform: translateY(100px); 
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
 .box.visible {
     opacity: 1;
     transform: translateY(0); 
 }
-
 /*Estilos del mapa*/
 
 .mapa{
@@ -370,7 +319,6 @@ h1{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 .localizar-socios{
     font-size: 40px;
     font-weight: 300;
@@ -379,7 +327,6 @@ h1{
     flex-direction: column;
     align-items: center;
 }
-
 .localizar-socios::after{
     content: ""; 
     height: 2px;
@@ -387,7 +334,6 @@ h1{
     background-color:#295996; 
     margin-top: 20px;
 }
-
 .estilos-mapa{
     border-radius: 20%;
     margin-top: 50px;
@@ -395,9 +341,7 @@ h1{
     width: 400px;
     height: 400px;
 }
-
 /*Estilos Footer*/
-
 footer{
     display: grid; 
     place-items: center; 
@@ -408,30 +352,25 @@ footer{
     height: 120px;
     margin:  0 auto;
 }
-
 .icono-redes, h4{
     color: white;
 }
-
 .logo-footer{
     width: 120px;
     height: auto;
 }
-
 footer p{
     font-size: 20px;
     color:#fff;
     margin-left: 8px;
     line-height: 1.2;
 }
-
 .redes-sociales{
     align-items: center;
     text-align: center;
     gap: 10px;
     padding-right: 7px;
 }
-
 .icono-redes{
     padding: 3px 7px;
     margin-right: 10px;
@@ -439,17 +378,13 @@ footer p{
     color: black;
     border-radius: 50%;
 }
-
 h4{
     font-weight: 300;
     padding-bottom: 10px;
 }
-
 .redes-sociales{
     padding-top: 10px;
 }
-
-
 /* Responsividad: Pantallas medianas a grandes (hasta 1200px) */
 @media (max-width: 1200px){
    
@@ -457,98 +392,81 @@ h4{
         overflow: hidden;
         gap: 30px;
     }
-
     .textos {
         margin-left: 120px;
     }
-
     .textos li {
         margin-bottom: 8px; 
         font-size: 17px;
     }
-
     .columna-parrafos p{
         font-size: 13px;
     }
-
     .columna-parrafos{
       width: 250px;
       height: 250px;
       text-align: center;
       justify-content: center;
     }
-
 }
 
 /* Responsividad: Pantallas medianas (hasta 768px) */
 @media (max-width: 768px) {
 
     header{
-        min-height: 80vh;
+        min-height: 100vh;
     }
-
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto;
         gap: 20px; /* Espacio entre filas */
         overflow: hidden; 
     }
-
     .logo{
         width: 140px;
         height: 40;
     }
-
     .textos {
         margin-left: 0;
     }
-
     h1{
         font-size: 40px;
     }
-
     .h2-convenios{
-        font-size: 35px;
+        font-size: 25px;
+        padding-top: 0;
+        margin-top: 50px;
     }
-
     h3 {
         font-size: 1.2em;
     }
-
     .columna-parrafos {
         /*width: 60%;
         height: auto; */
         padding: 10px;
         margin: 0 auto;
     }
-
     .columna-parrafos p{
         font-size: 15px;
     }
-
     .columna-parrafos::before {
         top: 2px; /* Línea blanca a 10px del borde superior */
     }
-    
     /* Línea abajo */
     .columna-parrafos::after {
         bottom: 2px; /* Línea blanca a 10px del borde inferior */
     }
-
     .textos li { 
         font-size: 18px;
     }
-
     .columna-lista {
         justify-content: center;
         text-align: center;
     }
-
     .secciones{
         font-size: 25px;
         padding-bottom: 10px;
      }
-
      .imagenes {
         display: flex; 
         flex-direction: row;
@@ -556,47 +474,46 @@ h4{
         justify-content: center; 
         align-items: center; 
     }
-     
      .imagenes {
         padding-top: 30px;
     }
-
+    .segunda-fila{
+        margin-top: 50px;
+    }
+    .banner-grande{
+        margin-top: 50px;
+    }
     .titulo p{
         font-weight: 400;
         font-size: 15px;
     }
-
     .mapa{
+        margin-top: 50px;
+        margin-bottom: 50px;
         flex-direction: column;
-        gap: 30px;
-        /*min-height: 80vh;*/
+        gap: 20px;
     }
-    
     .localizar-socios{
-        font-size: 30px;
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: 400;
     }
-    
     .estilos-mapa{
         border-radius: 0;
         margin-top: 0;
         margin-bottom: 50px;
-        width: 100%;
-        height: auto;
+        width: 250px;
+        height: 250px;
     }
-    
-    .localizar-socios{
-        font-size: 30px;
-    }
-
     .localizar-socios::after{
         width: 100px;
     }
-
     footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+        height: 250px;
     }
 }
 
@@ -607,13 +524,11 @@ h4{
     header{
         min-height: 100vh;
     }
-
     .grid-container {
         grid-template-columns: 1fr; 
         overflow: hidden;
         margin-top: 50px;
     }
-
      .textos {
        grid-template-columns: 1fr;
        width: 100%;
@@ -624,42 +539,34 @@ h4{
         grid-template-columns: 1fr; 
         gap: 30px;
     }
-
     h3 {
         font-size: 18px;
         margin-bottom: 0;
     }
-    
     h1{
         font-size: 30px;
     }
-
     .h2-convenios{
         font-size: 25px;
         padding-top: 0;
         margin-top: 50px;
     }
-
     .columna-parrafos {
         width: 100%;
         height: 250px;
         padding: 10px;
         text-align: center;
     }
-
     .columna-parrafos p{
         font-size: 15px;
     }
-
     .columna-parrafos::before {
         top: 3px; /* Línea blanca a 10px del borde superior */
     }
-    
     /* Línea abajo */
     .columna-parrafos::after {
         bottom: 3px; /* Línea blanca a 10px del borde inferior */
     }
-
     .textos li {
         margin-bottom: 8px; 
         font-size: 15px;
@@ -667,76 +574,62 @@ h4{
         color: #575757;
         cursor: pointer;
     }
-
     .columna-lista {
         justify-content: center;
         text-align: center;
     }
-
     .secciones{
         font-size: 25px;
         padding-bottom: 10px;
      }
-     
      .imagenes {
         padding-top: 30px;
     }
-
     .titulo p{
         font-weight: 400;
         font-size: 16px;
         padding-left: 5px;
         padding-right: 5px;
     }
-
     .segunda-fila{
         margin-top: 50px;
     }
-
     .banner-grande{
         margin-top: 50px;
     }
-
     .segunda-fila li{
         font-size: 15px;
     }
-
     .contenido-agrinir img {
         max-width: 350px;
         height: auto;
     }
-
     .imagen-equipo {
         display: none;
     }
-
     .open-btn{
         font-size: 25px;
     }
-
     .logo{
         width: 150px;
         height: 50px;
     }
-
     .carousel-item {
         padding: 2px; 
         border-radius: 20%;
         margin-right: 3px;
     }
-
     .mapa{
         margin-top: 50px;
         margin-bottom: 50px;
         flex-direction: column;
         gap: 20px;
     }
-    
     .localizar-socios{
-        font-size: 17px;
+        font-size: 20px;
+        font-weight: 400;
         margin-top: 20px;
     }
-    
     .estilos-mapa{
         border-radius: 0;
         margin-top: 0;
@@ -744,15 +637,9 @@ h4{
         width: 250px;
         height: 250px;
     }
-    
-    .localizar-socios{
-        font-size: 30px;
-    }
-
     .localizar-socios::after{
         width: 100px;
     }
-
     footer{
         display: flex;
         flex-direction: column;
@@ -760,7 +647,6 @@ h4{
         gap: 20px;
         height: 200px;
     }
-
     .imagenes {
         display: flex; 
         flex-direction: column;
