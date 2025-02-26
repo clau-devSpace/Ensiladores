@@ -235,6 +235,17 @@ background-color: #f1f1f1;
         margin-top: 10px;
     }
 
+    .table-modal {
+        width: 100%; 
+        height: auto;
+        table-layout: fixed; 
+        overflow-x: hidden; 
+    }
+
+    .modal__container{
+        max-width: 100%;
+    }
+
    /* .modal-content {
         width: 100%; /*aca antes puse 60 y funcionaba
         height: 100%; 
@@ -245,12 +256,7 @@ background-color: #f1f1f1;
         overflow-y: auto; 
     }
 
-    .table-modal {
-        width: 100%; 
-        height: auto;
-        table-layout: fixed; 
-        overflow-x: hidden; 
-    }
+    
 
     .table-modal td, .table-modal th {
         padding: 2px;
@@ -272,11 +278,9 @@ background-color: #f1f1f1;
         /*display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .modal__container{
-        max-width: 100%;
     }*/
+
+    
 }
 
 @media (max-width: 768px) {
@@ -287,15 +291,6 @@ background-color: #f1f1f1;
         overflow-x: auto;
         overflow-y: auto; 
         margin-top: 20px; 
-    }
-    /*.modal-content {
-        width: 50%;
-        height: 100%; 
-        margin: 0;
-        padding: 10px;
-        border-radius: 0; 
-        box-sizing: border-box;
-        overflow-y: auto; 
     }
 
     .table-modal {
@@ -310,6 +305,17 @@ background-color: #f1f1f1;
         word-wrap: break-word; 
         max-width: 100%; 
     }
+    /*.modal-content {
+        width: 50%;
+        height: 100%; 
+        margin: 0;
+        padding: 10px;
+        border-radius: 0; 
+        box-sizing: border-box;
+        overflow-y: auto; 
+    }
+
+    
 
     .logo-duckas {
         width: 80px;  
