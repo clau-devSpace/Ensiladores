@@ -43,6 +43,8 @@ h1{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -627,11 +629,11 @@ h4{
     }
     
     h1{
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .h2-convenios{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .columna-parrafos {
@@ -678,7 +680,7 @@ h4{
 
     .titulo p{
         font-weight: 400;
-        font-size: 13px;
+        font-size: 16px;
         padding-left: 5px;
         padding-right: 5px;
     }
