@@ -46,7 +46,7 @@ h1{
 .h2-convenios::after{
     content: ""; 
     height: 2px;
-    width: 15%;
+    width: 10%;
     background-color: #9c7b43; 
     margin-top: 10px;  /* Puedes ajustar el margen para separarlo del texto */
 }
@@ -330,7 +330,7 @@ h1{
 .localizar-socios::after{
     content: ""; 
     height: 2px;
-    width: 150px;
+    width: 15%;
     background-color:#295996; 
     margin-top: 20px;
 }
@@ -508,9 +508,6 @@ h4{
         width: 250px;
         height: 250px;
     }
-    .localizar-socios::after{
-        width: 15%;
-    }
     footer{
         display: flex;
         flex-direction: column;
@@ -633,18 +630,12 @@ h4{
         font-weight: 400;
         margin-top: 20px;
     }
-    .localizar-socios::after{
-        width: 15%;
-    }
     .estilos-mapa{
         border-radius: 0;
         margin-top: 0;
         margin-bottom: 50px;
         width: 250px;
         height: 250px;
-    }
-    .localizar-socios::after{
-        width: 15%;
     }
     footer{
         display: flex;
