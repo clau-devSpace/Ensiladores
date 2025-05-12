@@ -4,15 +4,15 @@ nav{
     left: 0;
     z-index: 1000;
     width: 100%;
-    height: 65px;
+    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: #295996;
+    /*background-color:  rgba(41, 89, 150, 0.8);*/
+    background-color: rgba(19, 85, 176, 0.8);
+   
 }
-
-/* Contenedor del menú */
 
 .menu-container {
     position: fixed;
@@ -21,16 +21,14 @@ nav{
     background-color: #295996;
     height: 100%;
     width: 250px;
-    display: none; /* Oculta el menú por defecto */
+    display: none; 
     z-index: 1000;
 }
 
-/* Estilo para mostrar el menú */
 .menu-container.active {
-    display: block; /* Muestra el menú */
+    display: block; 
 }
 
-/* Estilo para el menú */
 .menu-container ul {
     list-style: none;
     margin: 0;
@@ -48,24 +46,106 @@ nav{
     text-decoration: none;
     font-size: 15px;
     display: block;
-    /*padding: 10px;*/
 }
 
 .menu-container ul li a:hover {
     background-color: #575757;
 }
 
-/* Estilo del botón de abrir/cerrar menú */
+.nav-items{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .open-btn {
-    position: absolute;
+    /*position: absolute;
     top: 10px;
-    right: 20px;
+    right: 20px;*/
+    padding-right: 100px;
     font-size: 40px;
     color: #fff;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
+.asociate{
+    text-decoration: none;
+    color: white;
+    /*border-radius: 25px;*/
+}
+
+/*------------*/
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: calibri;
+    --size-pri: 1px;
+    --size-sec: 100px; 
+    --main-clr: #0ebac5;
+    --white: #fff;
+}
+
+.btn-asociate {
+    background: none;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    min-height: 52px;
+    font-family: calibri;
+    font-size: 1.2em;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 400;
+    position: relative;
+    /*border: 2px solid var(--white);*/
+    /*color: var(--white);*/
+    border: 2px solid #B2F996;
+    color: #B2F996;
+    background-color : transparent;
+    overflow: hidden;
+}
+
+    .btn-asociate::before, .btn-asociate::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: all 300ms ease-in;
+    }
+
+    .btn-asociate:hover {
+        color: #295996;
+    }
+
+    /*.asociate:hover{
+        color: #295996;
+    }*/
+    
+    .btn-asociate::before {
+        opacity: 0.3;
+    }
+
+    .btn-asociate::after {
+        transition-delay: 0.2s;
+    }
+
+    .btn-asociate:hover::before, .btn-asociate:hover::after {
+        top: 0;
+    }
 
 .close-btn{
     font-size: 30px;
@@ -75,7 +155,7 @@ nav{
     cursor: pointer;
     position: absolute;
     top: 20px;
-    left: 200px; /*Posición en el contenedor*/
+    left: 200px; 
 }
 
 @media (max-width: 480px) {
