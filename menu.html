@@ -19,10 +19,18 @@
           <button class="btn-asociate">
             Asociate<a href="#" class="asociate"></a>
           </button>
-
-          <button class="open-btn" onclick="toggleMenu()">
+          
+          <div class="open-btn-container">
+             <ul onclick="toggleMenu()" class="open-btn">
+                <li class="line line-one"></li>
+                <li class="line line-two"></li>
+                <li class="line line-three"></li>
+            </ul>
+          </div>
+          
+          <!--<button class="open-btn" onclick="toggleMenu()">
             <i class="bi bi-list"></i>
-          </button>
+          </button>-->
         </div>
 
         <div class="menu-container" id="menu">
@@ -30,16 +38,18 @@
             <i class="bi bi-x-lg"></i>
           </button>
 
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="socios.html">Socios</a></li>
-            <li><a href="#">Estadísticas</a></li>
-            <li><a href="#">Mapa</a></li>
-            <li><a href="#">Área Técnica</a></li>
-            <li><a href="#">Convenios</a></li>
-            <li><a href="#">Área Económica</a></li>
+          <ul class="menu-items">
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#"></a>Cómo Asociarme</li>
+            <li><a href="socios.html">Listado de Socios</a></li>
             <li><a href="#">Acceso Socios</a></li>
             <li><a href="#">Contacto</a></li>
+          </ul>
+
+          <ul class="menu-items">
+            <li><a href="#">Área Económica</a></li>
+            <li><a href="#">Área Técnica</a></li>
+            <li><a href="#">Mapa</a></li>
             <li><a href="#">Mercado Shops-logo</a></li>
           </ul>
         </div>
