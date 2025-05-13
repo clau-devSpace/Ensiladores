@@ -394,6 +394,19 @@ h4{
 .redes-sociales{
     padding-top: 10px;
 }
+
+/*Opacidad del fondo cuando se activa el menu*/
+.titulo.opacidad{
+    opacity: 0.2;
+}
+main.opacidad{
+    opacity: 0.3;
+}
+
+footer.opacidad{
+    opacity: 0.3;
+}
+
 /* Responsividad: Pantallas medianas a grandes (hasta 1200px) */
 @media (max-width: 1200px){
    
