@@ -14,7 +14,7 @@ body{
 }
 header{
     min-height: 100vh;
-    background-image: url(/imagenes/imagenes_de_fondo/edicion2.jpg);
+    background-image: url(/imagenes/imagenes_de_fondo/fondo-camiones.jpg);
     background-size: cover;
     /*background-position: center;*/
 }
@@ -60,7 +60,7 @@ h1{
 .titulo p{
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     font-size: 20px;
     color: #fff;
