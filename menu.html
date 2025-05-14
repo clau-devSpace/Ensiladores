@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
     <script src="JS/toggle.js"></script>
+    <script src="JS/McButton.js"></script>
 </head>
 <body>
 
@@ -21,7 +19,16 @@
             Asociate<a href="#" class="asociate"></a>
           </button>
           
-          <div class="open-btn-container">
+          <div class="McButton-container">
+          <a class="McButton" data="hamburger-menu" onclick="toggleMenu()">
+            <b></b>
+            <b></b>
+            <b></b>
+          </a>
+          </div>
+         
+          
+          <!--<div class="open-btn-container">
              <ul onclick="toggleMenu()" class="open-btn">
                 <li class="line line-one"></li>
                 <li class="line line-two"></li>
@@ -29,7 +36,7 @@
             </ul>
           </div>
           
-          <!--<button class="open-btn" onclick="toggleMenu()">
+          <button class="open-btn" onclick="toggleMenu()">
             <i class="bi bi-list"></i>
           </button>-->
         </div>

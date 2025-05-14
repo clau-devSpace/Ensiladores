@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    
 nav{
     position: fixed;
     top: 0;
@@ -25,6 +28,9 @@ nav{
     z-index: 1000;
     text-align: left;        
     /*justify-content: center;*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .menu-container.active {
@@ -108,6 +114,44 @@ nav{
     margin: 0 auto; 
 }
 
+.McButton-container{
+    position: relative;
+    margin-right: 120px;
+}
+
+.McButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -22px;  /*-(@bar-w / 2) donde @bar-w es 44px */
+    margin-top: -12.5px; /* -(@bar-h / 2) donde @bar-h es 3px y se multiplica por 3/4 */
+    width: 33px; /* @bar-w */
+    height: 22px; /* (@bar-w * 3) / 4 = (44 * 3) / 4 */
+    cursor: pointer;
+}
+
+.McButton b {
+    position: absolute;
+    left: 0;
+    width: 33px; /* @bar-w */
+    height: 2px; /* @bar-h */
+    background-color: white; /* @bar-color */
+}
+
+.McButton b:nth-child(1) {
+    top: 0;
+}
+
+.McButton b:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%); /* Centra el segundo elemento verticalmente */
+}
+
+.McButton b:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%); /* Mueve el tercer elemento hacia arriba para alinearlo */
+}
+
 /*.open-btn {
     position: absolute;
     top: 10px;
@@ -120,7 +164,7 @@ nav{
     cursor: pointer;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     filter: brightness(2.5);
-}*/
+}
 
  .line {
     width: 100%;
@@ -152,7 +196,7 @@ nav{
 
          .open-btn:hover .line-three {
             transform: translateY(8px)rotate(-45deg);
-        }
+        }*/
 
 .asociate{
     text-decoration: none;
