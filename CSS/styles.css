@@ -489,6 +489,12 @@ footer.opacidad{
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    /*background-color: #d9dede;*/
+    background-color: #e8e8e8;
+    width: 280px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .agrinir-items{
@@ -496,6 +502,7 @@ footer.opacidad{
     text-align: center;
     align-items: center;
     justify-content: space-around;
+    margin-block-end: 100px;
 }
 
 .agrinir-icono{
@@ -514,7 +521,7 @@ footer.opacidad{
     font-weight: 300;
     font-style: normal;*/
     font-size: 20px;
-    color: #6c7070;
+    color: black;
 }
 
 .margenes{
@@ -525,7 +532,7 @@ footer.opacidad{
 .linea-horizontal{
     margin-top: 5px;
     margin-bottom: 50px;
-    width: 120px;
+    width: 100px;
     height: 1px;
     background-color: #2f7a2f;
 }
