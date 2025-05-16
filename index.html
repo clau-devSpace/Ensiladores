@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/menu.css">
     <script src="JS/menu.js" defer></script>
-    <script src="JS/toggle.js"></script>
+   
     </head>
 
     <body>
@@ -27,6 +27,7 @@
 
       <!--Aquí se renderiza el menú-->
       <div id="nav">    
+       
       </div>
 
       <div class="titulo" id="titulo">
@@ -95,10 +96,19 @@
 
         <div class="linea-horizontal"></div>
 
-        <div class="agrinir-iconos">
-          <img class="agrinir-icono" src="imagenes/otras imagenes/Informe-tecnico.png"> 
-          <img class="agrinir-icono" src="imagenes/otras imagenes/protocolo-de-extraccion.png"> 
-          <img class="agrinir-icono" src="imagenes/otras imagenes/costos-y-condiciones.png"> 
+        <div class="agrinir-items">
+          <div class="icono-texto">
+            <img class="agrinir-icono" src="imagenes/otras imagenes/informe2.2.png"> 
+            <p class="texto-agrinir">Modelo de Informe<br>Técnico</p>
+          </div>
+          <div class="icono-texto">
+            <img class="agrinir-icono" src="imagenes/otras imagenes/informe.png"> 
+            <p class="texto-agrinir">Protocolo de extracción<br>de muestras</p>
+          </div>
+          <div class="icono-texto">
+            <img class="agrinir-icono" src="imagenes/otras imagenes/condiciones.png"> 
+            <p class="texto-agrinir">Costos y Condiciones<br>del Servicio</p>
+          </div>
         </div>
       </section>
       <!--Seccion que incluye: +Secciones, Cartelera de Novedades y Banners publicitarios
@@ -192,7 +202,8 @@
     </footer>
     
     <!--Script para animamciones de la pagina y para funcionalidad del Carrusel de imagenes-->
+     <script src="JS/toggle.js"></script>
     <script src="JS/animaciones.js"></script>
-    <script src="JS/carrusel.js"></script>
+    
   </body>
 </html>

@@ -4,10 +4,10 @@ function toggleMenu() {
   const titulo = document.getElementById('titulo');
   const main = document.getElementById('main');
   const footer = document.getElementById('footer');
-  menu.classList.toggle('active'); // Alterna la clase 'active'
+  menu.classList.toggle('activo'); // Alterna la clase 'active'
   
   // Cambia el display directamente
-  if (menu.classList.contains('active')) {
+  if (menu.classList.contains('activo')) {
       menu.style.display = 'flex'; // Muestra el menú
       titulo.classList.add('opacidad');
       main.classList.add('opacidad');
@@ -22,9 +22,8 @@ function toggleMenu() {
 }
 
 
-const menu = document.getElementById('menu');
+const icono = document.getElementById('menu-2');
 
-menu.addEventListener('click', function() {
-    menu.classList.toggle('active');
+icono.addEventListener('click', function() {
+    icono.classList.toggle('active');
 });
-
