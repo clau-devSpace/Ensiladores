@@ -448,17 +448,22 @@ footer.opacidad{
 }
 
 /*Estilo nueva seccion2 */
+
 .contenedor {
-    display: flex; /* Utiliza Flexbox */
-    width: 100%; /* Ocupa el 100% del ancho disponible */
-    overflow: hidden; /* Evita el desbordamiento */
+    display: flex; 
+    width: calc(100% - 200px); 
+    margin: 60px 100px 0; 
+    overflow: hidden; 
+    gap: 15px; 
 }
 
 .contenedor img {
-    flex: 1; /* Cada imagen ocupa el mismo espacio */
-    min-width: 0; /* Evita que las imágenes excedan el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Asegura que las imágenes llenen el espacio */
+    flex: 1; 
+    min-width: 0; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 
