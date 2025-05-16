@@ -1,20 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Londrina+Shadow&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     background-color: #edebe6;
 }
 header{
     min-height: 100vh;
-    background-image: url(/imagenes/imagenes_de_fondo/fondo-camiones.jpg);
+    background-image: url(/imagenes/imagenes_de_fondo/7-forraje-editado.jpg);
     background-size: cover;
     /*background-position: center;*/
+    
 }
 
 h1{
@@ -404,6 +407,60 @@ main.opacidad{
 footer.opacidad{
     opacity: 0.3;
 }
+
+/*Estilos nuevas secciones*/
+
+.primer-seccion {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-block-start: 100px;
+}
+
+.info-button {
+    margin-top: 20px; 
+}
+
+.somos{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #295996;
+    font-size: 22px;
+    text-align: left;
+    max-width: 900px;
+   /* margin: 0 auto;
+    margin-block-start: 100px;*/
+}
+
+.negrita{
+    font-weight: 700;
+}
+
+.mas-info{
+    background-color: #295996;
+    color: white;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #295996;
+    border-radius: 100px;
+}
+
+/*Estilo nueva seccion2 */
+.contenedor {
+    display: flex; /* Utiliza Flexbox */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    overflow: hidden; /* Evita el desbordamiento */
+}
+
+.contenedor img {
+    flex: 1; /* Cada imagen ocupa el mismo espacio */
+    min-width: 0; /* Evita que las imágenes excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio */
+}
+
 
 /* Responsividad: Pantallas medianas a grandes (hasta 1200px) */
 @media (max-width: 1200px){

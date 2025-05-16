@@ -1,4 +1,4 @@
-var McButton = $("[data=hamburger-menu]");
+/*var McButton = $("[data=hamburger-menu]");
 var McBar1 = McButton.find("b:nth-child(1)");
 var McBar2 = McButton.find("b:nth-child(2)");
 var McBar3 = McButton.find("b:nth-child(3)");
@@ -18,4 +18,4 @@ McButton.click( function() {
           .velocity({ top: "100%" }, {duration: 200, easing: "swing"});
     McBar1.velocity("reverse", {delay: 800});
   }
-});
+});*/

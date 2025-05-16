@@ -7,20 +7,20 @@ nav{
     left: 0;
     z-index: 1000;
     width: 100%;
-    height: 85px;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     /*background-color:  rgba(41, 89, 150, 0.8);*/
-    background-color: rgba(19, 85, 176, 0.9);
+    background-color: rgba(19, 85, 176, 0.8);
    
 }
 
 .menu-container{
     position: fixed;
-    top: 85px;
-    background: rgba(19, 85, 176, 0.9);
+    top: 75px;
+    background: rgba(19, 85, 176, 0.8);
     height: 100vh;
     width: 100%;
     /*width: 250px;*/
@@ -38,7 +38,7 @@ nav{
 }
 
 .menu-container2{
-    margin-top: 85px;
+    margin-top: 75px;
     margin-left: 100px;
     display: flex;
     gap: 50px;
@@ -114,7 +114,7 @@ nav{
     margin: 0 auto; 
 }
 
-.McButton-container{
+/*.McButton-container{
     position: relative;
     margin-right: 120px;
 }
@@ -123,19 +123,19 @@ nav{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -22px;  /*-(@bar-w / 2) donde @bar-w es 44px */
-    margin-top: -12.5px; /* -(@bar-h / 2) donde @bar-h es 3px y se multiplica por 3/4 */
-    width: 33px; /* @bar-w */
-    height: 22px; /* (@bar-w * 3) / 4 = (44 * 3) / 4 */
+    margin-left: -22px;  /*-(@bar-w / 2) donde @bar-w es 44px 
+    margin-top: -12.5px; /* -(@bar-h / 2) donde @bar-h es 3px y se multiplica por 3/4 
+    width: 33px; /* @bar-w 
+    height: 22px; /* (@bar-w * 3) / 4 = (44 * 3) / 4 
     cursor: pointer;
 }
 
 .McButton b {
     position: absolute;
     left: 0;
-    width: 33px; /* @bar-w */
-    height: 2px; /* @bar-h */
-    background-color: white; /* @bar-color */
+    width: 33px; /* @bar-w 
+    height: 2px; /* @bar-h 
+    background-color: white; /* @bar-color 
 }
 
 .McButton b:nth-child(1) {
@@ -144,13 +144,13 @@ nav{
 
 .McButton b:nth-child(2) {
     top: 50%;
-    transform: translateY(-50%); /* Centra el segundo elemento verticalmente */
+    transform: translateY(-50%); /* Centra el segundo elemento verticalmente 
 }
 
 .McButton b:nth-child(3) {
     top: 100%;
-    transform: translateY(-100%); /* Mueve el tercer elemento hacia arriba para alinearlo */
-}
+    transform: translateY(-100%); /* Mueve el tercer elemento hacia arriba para alinearlo 
+}*/
 
 /*.open-btn {
     position: absolute;
@@ -198,6 +198,38 @@ nav{
             transform: translateY(8px)rotate(-45deg);
         }*/
 
+.menu {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-right: 120px;
+}
+
+.bar {
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.menu.active #bar1 {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 12px;
+}
+
+.menu.active #bar2 {
+    opacity: 0;
+}
+
+.menu.active #bar3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 12px;
+}
+
 .asociate{
     text-decoration: none;
     color: white;
@@ -225,8 +257,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 145px;
-    min-height: 52px;
+    min-width: 130px;
+    min-height: 46px;
     font-family: calibri;
     font-size: 1.2em;
     border-radius: 100px;
@@ -235,8 +267,8 @@ nav{
     position: relative;
     /*border: 2px solid var(--white);*/
     /*color: var(--white);*/
-    border: 2px solid #B2F996;
-    color: #B2F996;
+    border: 2px solid white;
+    color: white;
     background-color : transparent;
     overflow: hidden;
 }
