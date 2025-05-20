@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -18,11 +22,15 @@
             Asociate<a href="#" class="asociate"></a>
           </button>
 
-          <div class="menu" id="menu-2" onclick="toggleMenu()">
+           <div class="menu" id="menu-2" onclick="toggleMenu()">
              <div class="bar" id="bar1"></div>
              <div class="bar" id="bar2"></div>
              <div class="bar" id="bar3"></div>
            </div>
+
+           <div class="close-menu" id="close-menu" onclick="toggleMenu()">
+            <i class="bi bi-x-circle close-button"></i>
+           </div> 
           
           
           <!--<div class="McButton-container">
@@ -47,15 +55,15 @@
           </button>-->
         </div>
 
-        <div class="menu-container" id="menu">
+        <div class="menu-container animate__animated " id="menu">
 
           <div  class="menu-container2">
             <div class="container-items">
                <ul class="menu-items items-1">
-                 <li><i class="bi bi-arrow-right"></i><a href="#" id="nosotros">Nosotros</a></li>
-                 <li><i class="bi bi-arrow-right"></i><a href="#" id="areas">Áreas</a></li>
+                 <li><i class="bi bi-arrow-right"></i><a href="#" id="nosotros" onclick="showList()">Nosotros</a></li>
+                 <li><i class="bi bi-arrow-right"></i><a href="#" id="areas" onclick="showList()">Áreas</a></li>
                  <li><i class="bi bi-arrow-right"></i><a href="#">Mapa</a></li>
-                 <li><i class="bi bi-arrow-right"></i><a href="socios.html">Exclusivo Socios</a></li>
+                 <li><i class="bi bi-arrow-right"></i><a href="#">Exclusivo Socios</a></li>
                  <li><i class="bi bi-arrow-right"></i><a href="#">Contacto</a></li>
                </ul>
              </div>
@@ -63,21 +71,21 @@
              <div class="vertical-line"></div>
 
               <div class="container-items">
-                 <ul class="menu-items items-2">
+                 <ul class="menu-items items-2" id="items2">
                    <li><a href="#">Misión, Visión y Valores</a></li>
                    <li><a href="#">Junta Directiva</a></li>
-                   <li><a href="#">Nuestros Socios</a></li>
+                   <li><a href="socios.html">Nuestros Socios</a></li>
                    <li><a href="#">Convenios</a></li>
                    <li><a href="#">Quiero Asociarme</a></li>
                   </ul>
                </div>
 
-               <!--<div class="container-items">
-                 <ul class="menu-items items-3">
+               <div class="container-items items-3">
+                 <ul class="menu-items los3" id="items3">
                    <li><a href="#">Área Económica</a></li>
                    <li><a href="#">Área Técnica</a></li>
                   </ul>
-               </div>-->
+               </div>
 
                <div class="img-container-menu">
                 <img class="img-menu" src="imagenes/imagenes_de_fondo/imagennueva3-menu.png">

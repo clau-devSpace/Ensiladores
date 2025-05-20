@@ -13,7 +13,7 @@
     <script src="JS/toggle.js"></script>
 </head>
 
-<body>
+<body class="no-opacity-page">
 
     <!--Aquí se renderiza el menú-->
     <div id="nav">    
@@ -21,7 +21,7 @@
   
     
     <!--Encabezado o titulo de la pagina + texto-->
-    <div class="encabezado">
+    <div class="encabezado" id="encabezado">
         <h2>Listado de socios</h2>
         <p>Para ordenar alfabéticamente haga click sobre el titulo de la columna</p>    
     </div>
@@ -30,7 +30,7 @@
         
     <!--Tabla/lista de socios general. Info de ejemplo, primeros 15 socios de la lista original ordenada alfabeticamente, incluye funcion "sorTable()" para ordenar alfabeticamente, a modo de muestra-->
     
-    <div class="tabla-container">
+    <div class="tabla-container" id="tabla-container">
         <table id="myTable">
             <thead>
                 <tr class="tr">

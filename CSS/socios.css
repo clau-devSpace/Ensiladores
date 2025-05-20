@@ -177,6 +177,13 @@ background-color: #f1f1f1;
     text-align: center;
 }
 
+#encabezado.opacidad{
+    opacity: 0.5;
+}
+
+#tabla-container.opacidad{
+    opacity: 0.5;
+}
 /********Media Querys/responsive*********/
 
 /*Media Query para pantallas pequeñas (480px o menos) */

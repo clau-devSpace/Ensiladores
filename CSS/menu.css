@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     
 nav{
     position: fixed;
@@ -7,43 +7,49 @@ nav{
     left: 0;
     z-index: 1000;
     width: 100%;
-    height: 75px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    /*background-color:  rgba(41, 89, 150, 0.8);*/
-    background-color: rgba(19, 85, 176, 0.8);
+    background-color: #1355B0;
    
 }
 
 .menu-container{
     position: fixed;
-    top: 75px;
+    top: 60px;
     padding-top: 20px;
-    background: rgba(19, 85, 176, 0.8);
+    background: rgba(19, 85, 176, 0.9);
     height: 100vh;
     width: 100%;
-    /*width: 250px;*/
     display: none; 
     z-index: 1000;
     text-align: left;        
-    /*justify-content: center;*/
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    transform: translateX(100%); 
+    transition: transform 1s ease; 
+    animation-duration: 1.5s;
 }
 
 .menu-container.activo {
     display: flex; 
+    transform: translateX(0); 
 }
 
 .menu-container2{
     margin-top: 75px;
     margin-left: 100px;
     display: flex;
-    gap: 50px;
+    gap: 35px;
+}
+
+.los3{
+    padding: 0;
+    margin: 0;
 }
 
 .menu-container .menu-items {
@@ -57,9 +63,10 @@ nav{
 }
 
 .menu-container .container-items{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: inline;
+   /* flex-direction: column;
+    justify-content: flex-start;*/
+    text-align: left;
 }
 
 .menu-container .menu-items li {
@@ -79,7 +86,7 @@ nav{
 }
 
 .items-1{
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 100;
 }
 
@@ -104,109 +111,39 @@ nav{
     font-weight: 200;
 }
 
+.items-3{
+    display: none;
+    text-align: left;
+}
+
+
 #nosotros{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .img-container-menu{
-    margin-left: 35px;
+    position: absolute; 
+    top: 100px; 
+    right: 155px; 
+}
+
+.logo{
+    width: 230px;
+    height: auto;
 }
 
 .img-menu{
-    width: 350px;
+    width: 300px;
     height: auto;
 }
 
 .vertical-line{
+    align-items: flex-start;
     width: 1px; 
-    height: 308px;
+    height: 360px;
     background-color: white;
     margin: 0 auto; 
 } 
-
-/*.McButton-container{
-    position: relative;
-    margin-right: 120px;
-}
-
-.McButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -22px;  /*-(@bar-w / 2) donde @bar-w es 44px 
-    margin-top: -12.5px; /* -(@bar-h / 2) donde @bar-h es 3px y se multiplica por 3/4 
-    width: 33px; /* @bar-w 
-    height: 22px; /* (@bar-w * 3) / 4 = (44 * 3) / 4 
-    cursor: pointer;
-}
-
-.McButton b {
-    position: absolute;
-    left: 0;
-    width: 33px; /* @bar-w 
-    height: 2px; /* @bar-h 
-    background-color: white; /* @bar-color 
-}
-
-.McButton b:nth-child(1) {
-    top: 0;
-}
-
-.McButton b:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%); /* Centra el segundo elemento verticalmente 
-}
-
-.McButton b:nth-child(3) {
-    top: 100%;
-    transform: translateY(-100%); /* Mueve el tercer elemento hacia arriba para alinearlo 
-}*/
-
-/*.open-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    padding-right: 100px;
-    font-size: 40px;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    filter: brightness(2.5);
-}
-
- .line {
-    width: 100%;
-    height: 2px;
-    list-style-type: none;
-    background-color: #fff;
-    margin-top: 8px;
-    transition: all 500ms ease;
-    }
-
-    .open-btn {
-    cursor: pointer;
-    width: 30px;
-    margin-right: 100px;
-            
-     }
-
-        .open-btn:hover .line {
-            transform-origin: 15% 50%;
-        }
-
-        .open-btn:hover .line-one {
-            transform: translateY(-8px) rotate(45deg);
-        }
-
-         .open-btn:hover .line-two {
-            opacity: 0;
-        }
-
-         .open-btn:hover .line-three {
-            transform: translateY(8px)rotate(-45deg);
-        }*/
 
 .menu {
     cursor: pointer;
@@ -215,6 +152,7 @@ nav{
     position: relative;
     margin-right: 120px;
     margin-top: 25px;
+    transition: transform 0.8s ease;
 }
 
 .bar {
@@ -225,7 +163,7 @@ nav{
     transition: all 0.3s ease;
 }
 
-.menu.active #bar1 {
+/*.menu.active #bar1 {
     transform: rotate(45deg);
     position: absolute;
     top: 12px;
@@ -239,12 +177,32 @@ nav{
     transform: rotate(-45deg);
     position: absolute;
     top: 12px;
-}
+}*/
 
 .asociate{
     text-decoration: none;
     color: white;
     /*border-radius: 25px;*/
+}
+
+.close-menu{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 120px;
+    font-size: 30px;
+    color: white;
+}
+
+.menu-container.cerrar{
+    animation: slideInLeft;
+    animation-duration: 1.5s;
+}
+
+
+.menu-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 /*------------*/
@@ -268,16 +226,14 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 130px;
-    min-height: 46px;
+    min-width: 120px;
+    min-height: 40px;
     font-family: calibri;
     font-size: 1.2em;
     border-radius: 100px;
     cursor: pointer;
     font-weight: 400;
     position: relative;
-    /*border: 2px solid var(--white);*/
-    /*color: var(--white);*/
     border: 2px solid white;
     color: white;
     background-color : transparent;
@@ -299,10 +255,6 @@ nav{
     .btn-asociate:hover {
         color: #295996;
     }
-
-    /*.asociate:hover{
-        color: #295996;
-    }*/
     
     .btn-asociate::before {
         opacity: 0.3;
