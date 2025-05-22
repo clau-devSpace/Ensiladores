@@ -14,24 +14,32 @@ body{
 }
 header{
     min-height: 100vh;
-    background-image: url(/imagenes/imagenes_de_fondo/scandi.jpg);
+    background-image: url(/imagenes/imagenes_de_fondo/pixabay.png);
     background-size: cover;
     background-position: center;
+}
+
+.animate-item {
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.fade-in-left{
+    animation-duration: 3s;
+    transition: opacity 0.3s easy;
 }
 
 h1{
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
-    font-size: 45px;
+    font-size: 50px;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-top: 230px;
-    filter: brightness(2.5);
+    padding-top: 205px;
 }
 
 .animacion1{
@@ -57,16 +65,19 @@ h1{
     background-color: #9c7b43; 
     margin-top: 10px;  /* Puedes ajustar el margen para separarlo del texto */
 }
+
+.titulo{
+    animation-duration: 3s;
+}
 .titulo p{
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     text-align: center;
-    filter: brightness(2.5);
 }
 .logo{
     padding-left: 100px;
@@ -420,6 +431,7 @@ footer.opacidad{
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    justify-content: center;
     margin-block-start: 100px;
 }
 
@@ -428,18 +440,16 @@ footer.opacidad{
 }
 
 .somos{
-    /*font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;*/
-    font-family: "PT Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #295996;
-    font-size: 22px;
+    color: #333333;
+    font-size: 25px;
     text-align: left;
     max-width: 900px;
-   /* margin: 0 auto;
-    margin-block-start: 100px;*/
+    line-height: 1.5;
+    animation-duration: 2s;
 }
 
 .negrita{
@@ -447,12 +457,17 @@ footer.opacidad{
 }
 
 .mas-info{
-    background-color: #295996;
-    color: white;
-    width: 140px;
-    height: 40px;
-    border: 1px solid #295996;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    color: #0c51a6;
+    border: 2px solid #0c51a6;
+    width: 185px;
+    height: 55px;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 /*Estilo nueva seccion2 */
@@ -475,19 +490,26 @@ footer.opacidad{
 }
 
 /*Estilo nueva seccion3*/
+.agrinir-container{
+   width: 100%;
+   /*background-color: #6b99cb;*/
+   background-color: #52854A;
+}
+
 .agrinir{
     display: flex;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
+    font-family: "Roboto condensed", sans-serif;
+    font-weight: 600;
     font-style: normal;
     /*font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-style: normal;*/
     font-size: 43px;
-    margin-block-start: 100px;
     text-align: left;
     align-items: flex-start;
     justify-content: left;
+    line-height: 1;
+    color: white;
 }
 
 .icono-texto{
@@ -496,7 +518,9 @@ footer.opacidad{
     align-items: center;
     gap: 15px;
     /*background-color: #d9dede;*/
-    background-color: #e8e8e8;
+    /*background-color: #EEEEEE;*/
+    border: 1px solid #2f7a2f;
+    border-style:dotted;
     width: 280px;
     height: auto;
     padding: 20px;
@@ -505,29 +529,59 @@ footer.opacidad{
 
 .agrinir-items{
     display: flex;
-    text-align: center;
+    text-align: left;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-block-start: 100px;
     margin-block-end: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.agrinir-icono{
-    width: 170px;
-    height: auto;
+.descarga-agrinir{
+   font-size: 25px;
+   font-weight: 400;
+   color: #333333;
+   cursor: pointer;
+   margin-left: 10px;
+}
+
+.icono-agrinir{
+    color: white;
+    font-size: 25px;
+    margin-right: 10px;
+    align-items: middle;
 }
 
 .texto-agrinir{
-    text-align: center;
-    place-items: middle;
     justify-content: center;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
    /* font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-style: normal;*/
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
+    color: white;
+    max-width: 800px;
+}
+
+.analisis-forraje{
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.lista-agrinir li{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lista-agrinir{
+    margin-top: 15px;
 }
 
 .margenes{
@@ -536,11 +590,11 @@ footer.opacidad{
 }
 
 .linea-horizontal{
-    margin-top: 5px;
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 100px;
     height: 1px;
-    background-color: #2f7a2f;
+    background-color: white;
 }
 
 

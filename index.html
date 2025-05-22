@@ -31,9 +31,9 @@
       </div>
 
       <div class="titulo" id="titulo">
-        <h1 class="animacion1 animate__animated animate__fadeIn">CÁMARA ARGENTINA DE<br />CONTRATISTAS FORRAJEROS</h1>
+        <h1 class="animate-item" data-animation="animate__fadeIn">CÁMARA ARGENTINA DE<br />CONTRATISTAS FORRAJEROS</h1>
         <br />
-        <p class="animacion1 animate__animated animate__fadeInUp">
+        <p class="animate-item" data-animation="animate__fadeInUp">
           Somos CACF, una Institución sin fines de lucro que agrupa<br />Contratistas
           Forrajeros de Argentina y todo el mundo.
         </p>
@@ -70,9 +70,9 @@
         </div>
       </seccion> -->
 
-      <section class="primer-seccion box">
+      <section class="primer-seccion animate-item fade-in-left" data-animation= "animate__fadeInUp">
         <p class="somos"> 
-          Somos una <span class="negrita">asociación civil sin fines de lucro</span>, constituida formalmente el 14 de Noviembre de 2003. Nos encargamos de <span class="negrita">promover y defender los intereses de los Contratistas Forrajeros en Argentina</span>, <span class="negrita">fomentar el desarrollo de la actividad forrajera</span>, asegurando prácticas sostenibles y eficientes y <span class="negrita">brindamos capacitación y actualización a nuestros socios</span> sobre técnicas y tecnologías en el sector.
+         <span class="negrita">Fundada el 14 de noviembre de 2003, la Cámara Argentina de Contratistas Forrajeros (CACF) es una asociación civil sin fines de lucro.<br></span> Somos una red activa con una <span class="negrita">trayectoria de más de 20 años</span>, que se dedica a investigar y <span class="negrita">promover la actividad forrajera argentina</span>. Impulsamos prácticas forrajeras eficientes y sostenibles, garantizando la constante capacitación de nuestros socios en las últimas tecnologías.
         </p>
         
         <div class="info-button">
@@ -84,32 +84,51 @@
       </section>
       
       <section>
-        <div class="contenedor">
-         <img src="imagenes/otras imagenes/felicia-varzari-apE2kS6IYmI-unsplash.jpg" alt="Imagen vaca">
-         <img src="imagenes/otras imagenes/c71ee036-2efb-4343-b471-e35a1d4187fc (1).jpg" alt="Imagen 2">
-         <img src="imagenes/otras imagenes/472559312_18484194040036778_2097553460048119553_n.jpg" alt="Imagen 3">
+        <div class="contenedor animate-item" data-animation="animate__fadeIn">
+         <img src="imagenes/otras imagenes/felicia-varzari-apE2kS6IYmI-unsplash.jpg" alt="Imagen vaca" data-animation="animate__fadeIn" class="animate-item sequential-animate">
+         <img src="imagenes/otras imagenes/forrajeee.jpg" alt="Imagen 2" data-animation="animate__fadeIn" class="animate-item sequential-animate">
+         <img src="imagenes/otras imagenes/472559312_18484194040036778_2097553460048119553_n.jpg" alt="Imagen 3" data-animation="animate__fadeIn" class="animate-item sequential-animate">
         </div>
       </section>
 
-      <section class="margenes">
-        <h3 class="agrinir">Análisis de Forrajes,<br>un servicio de la Cámara</h3>
+      <section class="agrinir-container">
+        <div class="margenes agrinir-items">
+          <div class="agrinir1">
+            <h3 class="agrinir animate-item" data-animation="animate__fadeInDown">Análisis de Forrajes,<br>un servicio de la Cámara</h3>
 
-        <div class="linea-horizontal"></div>
+            <div class="linea-horizontal"></div>
+            
+            <p class="texto-agrinir animate-item" data-animation="animate__fadeInDown">El análisis de forrajes implica evaluar la composición química y nutricional de los forrajes, incluyendo proteínas, fibra, carbohidratos y minerales.Este análisis es fundamental en la agricultura y la ganadería, ya que permite a los productores tomar decisiones informadas sobre la alimentación de sus animales.</p>
 
-        <div class="agrinir-items">
-          <div class="icono-texto">
-            <img class="agrinir-icono" src="imagenes/otras imagenes/informe2.2.png"> 
-            <p class="texto-agrinir">Modelo de Informe<br>Técnico</p>
+          <ul class="texto-agrinir lista-agrinir animate-item" data-animation="animate__fadeInDown">
+            <li><i class="bi bi-card-list icono-agrinir"></i>Modelo de Informe Técnico</li>
+            <li><i class="bi bi-flower3 icono-agrinir"></i>Protocolo de Extracción de Muestras</li>
+            <li><i class="bi bi-exclamation-circle icono-agrinir"></i>Costos y Condiciones del Servicio</li>
+          </ul>
           </div>
-          <div class="icono-texto">
-            <img class="agrinir-icono" src="imagenes/otras imagenes/informe.png"> 
-            <p class="texto-agrinir">Protocolo de extracción<br>de muestras</p>
-          </div>
-          <div class="icono-texto">
-            <img class="agrinir-icono" src="imagenes/otras imagenes/condiciones.png"> 
-            <p class="texto-agrinir">Costos y Condiciones<br>del Servicio</p>
+
+          <div class="agrinir2 animate-item" data-animation="animate__fadeIn">
+          <img class="analisis-forraje" src="imagenes/otras imagenes/analisis-forraje.jpg">
           </div>
         </div>
+
+        <!--<div class="agrinir-items animate-item" data-animation="animate__fadeIn">
+          <div class="icono-texto animate-item sequential-animate" data-animation="animate__fadeIn" >
+            <img class="agrinir-icono" src="imagenes/otras imagenes/papel.png"> 
+            <p class="texto-agrinir">Modelo de Informe<br>Técnico</p>
+            <i class="bi bi-download descarga-agrinir"></i>
+          </div>
+          <div class="icono-texto animate-item sequential-animate" data-animation="animate__fadeIn" >
+            <img class="agrinir-icono" src="imagenes/otras imagenes/segundd.png"> 
+            <p class="texto-agrinir">Protocolo de extracción<br>de muestras</p>
+            <i class="bi bi-download descarga-agrinir"></i>
+          </div>
+          <div class="icono-texto animate-item sequential-animate" data-animation="animate__fadeIn" >
+            <img class="agrinir-icono" src="imagenes/otras imagenes/tercerr.png"> 
+            <p class="texto-agrinir">Costos y Condiciones<br>del Servicio</p>
+            <i class="bi bi-download descarga-agrinir"></i>
+          </div>
+        </div>-->
       </section>
       <!--Seccion que incluye: +Secciones, Cartelera de Novedades y Banners publicitarios
       <section>
@@ -187,7 +206,8 @@
     
     <!--Footer-->
     <footer id="footer">
-      <div logo-texto>
+      <div class="container-footer margenes">
+        <div logo-texto>
         <a href="index.html"><img src="imagenes/logos/logo-footer.png" class="logo-footer" /></a>
         <p>Contratistas Forrajeros</p>
       </div>
@@ -199,6 +219,8 @@
           <i class="bi bi-twitter-x icono-redes"></i>
         </div>
       </div>
+      </div>
+      
     </footer>
     
     <!--Script para animamciones de la pagina y para funcionalidad del Carrusel de imagenes-->

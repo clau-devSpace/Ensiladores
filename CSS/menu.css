@@ -12,7 +12,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: #1355B0;
+    /*background-color: #295996;*/
+    /*background-color: #2861a8;*/
+    background-color: #0c51a6;
    
 }
 
@@ -27,7 +29,6 @@ nav{
     z-index: 1000;
     text-align: left;        
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
     transform: translateX(100%); 
@@ -133,7 +134,7 @@ nav{
 }
 
 .img-menu{
-    width: 300px;
+    width: 330px;
     height: auto;
 }
 
