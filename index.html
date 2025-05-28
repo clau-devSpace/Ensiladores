@@ -14,6 +14,9 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/menu.css">
     <script src="JS/menu.js" defer></script>
@@ -71,7 +74,7 @@
       </seccion> -->
 
       <section class="primer-seccion animate-item fade-in-left" data-animation= "animate__fadeInUp">
-        <p class="somos"> 
+        <p class="somos margenes2"> 
          <span class="negrita">Fundada el 14 de noviembre de 2003, la Cámara Argentina de Contratistas Forrajeros (CACF) es una asociación civil sin fines de lucro.<br></span> Somos una red activa con una <span class="negrita">trayectoria de más de 20 años</span>, que se dedica a investigar y <span class="negrita">promover la actividad forrajera argentina</span>. Impulsamos prácticas forrajeras eficientes y sostenibles, garantizando la constante capacitación de nuestros socios en las últimas tecnologías.
         </p>
         
@@ -94,7 +97,7 @@
       <section class="agrinir-container">
         <div class="margenes agrinir-items">
           <div class="agrinir1">
-            <h3 class="agrinir animate-item" data-animation="animate__fadeInDown">Análisis de Forrajes,<br>un servicio de la Cámara</h3>
+            <h3 class="agrinir animate-item" data-animation="animate__fadeInDown">Análisis de Forrajes</h3>
 
             <div class="linea-horizontal"></div>
             
@@ -114,6 +117,35 @@
       </section>
 
       <section>
+        <div class="empresas-cacf margenes">
+          <h2 class="h2-empresas">Empresas que nos acompañan</h2>
+          <div class="linea-horizontal2"></div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide img-johndeere"><img src="imagenes/logos/johndeere.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/claas.jpg"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/akron.png"></div>
+              <div class="swiper-slide"><img class="img-newholland" src="imagenes/logos/new-holland - copia.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/richiger.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/canavesio.jpg"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/kuhn.jpg"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/greenpack.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/blade.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/shakerbox.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/novonesis.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/cooperacion.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/mouras.png"></div>
+              <div class="swiper-slide"><img src="imagenes/logos/toolking.png"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      
+      </section>
+
+      <section class="cuarta-seccion">
         <div class="informacion-util margenes">
           <div>
            <h3 class="titulo-informacion-util">Información Útil</h3>
@@ -122,12 +154,14 @@
           <div class="frames">
             <div class="frames1">
               <img class="imagen-socios" src="imagenes/otras imagenes/foto-socios.jpg">
+              <div class="linea-horizontal3"></div>
               <h2 class="informacion-util-h2">Beneficios de los Socios CACF</h2>
               <p class="informacion-util-p">Ser socio de la Cámara Argentina de Contratistas Forrajeros te brinda acceso exclusivo a herramientas, información y ventajas económicas; clave para potenciar tu crecimiento. Te invitamos a conocer los beneficios.</p>
             </div>
 
             <div class="frames1">
                <iframe class="mapa" src="https://ensiladores.com.ar/InfoSocios/Maps/MapaSociosAgrupado.php"></iframe>
+               <div class="linea-horizontal3"></div>
                <h2 class="informacion-util-h2">Localizá a nuestros socios</h2>
                <p class="informacion-util-p">Ver mapa en pantalla completa</p>
             </div>
@@ -164,6 +198,7 @@
     <!--Script para animamciones de la pagina y para funcionalidad del Carrusel de imagenes-->
      <script src="JS/toggle.js"></script>
     <script src="JS/animaciones.js"></script>
+    <script src="JS/slider-marcas.js"></script>
     
   </body>
 </html>
