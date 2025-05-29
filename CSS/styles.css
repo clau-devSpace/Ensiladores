@@ -63,7 +63,7 @@ h1{
     height: 2px;
     width: 10%;
     background-color: #9c7b43; 
-    margin-top: 10px;  /* Puedes ajustar el margen para separarlo del texto */
+    margin-top: 10px;  
 }
 
 .titulo{
@@ -153,34 +153,23 @@ footer {
     background-color: #000000;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    /* La altura del footer ya la tienes, pero es importante que el .container-footer
-       tenga suficiente espacio para que align-items: center funcione bien.
-       Si quieres que .container-footer ocupe toda la altura del footer, puedes usar: */
-    /* display: flex; */
-    /* align-items: center; */ /* Para centrar verticalmente el .container-footer dentro del footer si es necesario */
-    /* justify-content: center; */
 }
 
 .container-footer {
     display: flex;
-    justify-content: space-between; /* Distribución horizontal */
-    align-items: center; /* ¡Alineación vertical centrada de los ítems hijos! */
-    /* text-align: center; */ /* Esto no tiene efecto en los ítems flex, solo en texto interno */
-    /* Para que el centrado vertical se note, .container-footer
-       debe ocupar la altura disponible del footer. */
-    height: 100%; /* Permite que .container-footer ocupe toda la altura de su padre (footer) */
-    width: calc(100%-200px); /* Ajusta el ancho según necesidad, 90% es un ejemplo */
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+    width: calc(100%-200px); 
     margin: 0 auto; 
     padding: 0 100px;
     box-sizing: border-box;
 }
 
-/* Selector para el div con el atributo logo-texto */
 [logo-texto] {
-    display: flex; /* Convierte este div en un contenedor flex para el logo y el texto */
+    display: flex; 
     flex-direction: column;
-    align-items: flex-start; /* Centra verticalmente el logo y el párrafo dentro de este div */
-    /* gap: 10px; */ /* Si usas 'gap', asegúrate de que el navegador lo soporte bien (moderno) */
+    align-items: flex-start; 
     margin: 0;
     padding: 0;
 }
@@ -198,40 +187,36 @@ h4 {
 footer p {
     font-size: 17px;
     color: #fff;
-    /*margin-left: 8px;*/
     line-height: 1.2;
-    margin-top: 0; /* Asegurarse de eliminar márgenes por defecto que puedan afectar alineación */
+    margin-top: 0; 
     margin-bottom: 0;
     text-indent: -5px;
 
 }
 
-/* Corrección para .redes-sociales */
 .redes-sociales {
     text-align: center; 
 }
 
-/* Estilos para los iconos dentro de .redes-sociales */
-.redes-sociales > div { /* Selecciona el div que contiene los iconos dentro de .redes-sociales */
-    display: flex; /* Para que los iconos se comporten como flex items y puedas espaciarlos */
-    justify-content: center; /* Centra los iconos si no llenan todo el espacio */
-    align-items: center; /* Centra verticalmente los iconos si tuvieran diferentes alturas */
-    gap: 10px; /* Espacio entre los iconos */
+.redes-sociales > div {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
 }
 
 
 .icono-redes {
     padding: 8px 12px;
-    /* margin-right: 10px; */ /* Puedes usar 'gap' en su contenedor flex en su lugar */
     background-color: #fff;
     color: #000000;
     border-radius: 50%;
-    font-size: 1.5em; /* Ajusta el tamaño del icono */
-    display: flex; /* Para centrar el contenido dentro del círculo si es necesario */
+    font-size: 1.5em; 
+    display: flex; 
     justify-content: center;
     align-items: center;
-    width: 45px; /* Ejemplo de tamaño fijo para el círculo */
-    height: 45px; /* Ejemplo de tamaño fijo para el círculo */
+    width: 45px; 
+    height: 45px; 
 }
 
 h4 {
