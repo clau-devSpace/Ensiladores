@@ -14,7 +14,7 @@ body{
 }
 header{
     min-height: 100vh;
-    background-image: url(/imagenes/imagenes_de_fondo/prueba2.jpg);
+    background-image: url(/imagenes/imagenes_de_fondo/favorita-11.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -89,22 +89,26 @@ h1{
 
 /*Estilos Footer*/
 footer{
-    display: grid; 
-    place-items: center; 
+    
+    background-color: #000000;
+    height: 150px;
+}
+
+.container-footer{
     display: flex;
     justify-content: space-between;
-    background-color: black;
-    padding: 15px;
-    height: 120px;
-    margin:  0 auto;
+    align-items: center;
+    text-align: center;
 }
+
 .icono-redes, h4{
     color: white;
 }
 .logo-footer{
-    width: 120px;
+    width: 140px;
     height: auto;
 }
+
 footer p{
     font-size: 20px;
     color:#fff;
@@ -144,6 +148,98 @@ footer.opacidad{
     opacity: 0.3;
 }
 
+/* Estilos Footer */
+footer {
+    background-color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    /* La altura del footer ya la tienes, pero es importante que el .container-footer
+       tenga suficiente espacio para que align-items: center funcione bien.
+       Si quieres que .container-footer ocupe toda la altura del footer, puedes usar: */
+    /* display: flex; */
+    /* align-items: center; */ /* Para centrar verticalmente el .container-footer dentro del footer si es necesario */
+    /* justify-content: center; */
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between; /* Distribución horizontal */
+    align-items: center; /* ¡Alineación vertical centrada de los ítems hijos! */
+    /* text-align: center; */ /* Esto no tiene efecto en los ítems flex, solo en texto interno */
+    /* Para que el centrado vertical se note, .container-footer
+       debe ocupar la altura disponible del footer. */
+    height: 100%; /* Permite que .container-footer ocupe toda la altura de su padre (footer) */
+    width: calc(100%-200px); /* Ajusta el ancho según necesidad, 90% es un ejemplo */
+    margin: 0 auto; 
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+/* Selector para el div con el atributo logo-texto */
+[logo-texto] {
+    display: flex; /* Convierte este div en un contenedor flex para el logo y el texto */
+    flex-direction: column;
+    align-items: flex-start; /* Centra verticalmente el logo y el párrafo dentro de este div */
+    /* gap: 10px; */ /* Si usas 'gap', asegúrate de que el navegador lo soporte bien (moderno) */
+    margin: 0;
+    padding: 0;
+}
+
+.icono-redes,
+h4 {
+    color: white;
+}
+
+.logo-footer {
+    width: 140px;
+    height: auto;
+}
+
+footer p {
+    font-size: 17px;
+    color: #fff;
+    /*margin-left: 8px;*/
+    line-height: 1.2;
+    margin-top: 0; /* Asegurarse de eliminar márgenes por defecto que puedan afectar alineación */
+    margin-bottom: 0;
+    text-indent: -5px;
+
+}
+
+/* Corrección para .redes-sociales */
+.redes-sociales {
+    text-align: center; 
+}
+
+/* Estilos para los iconos dentro de .redes-sociales */
+.redes-sociales > div { /* Selecciona el div que contiene los iconos dentro de .redes-sociales */
+    display: flex; /* Para que los iconos se comporten como flex items y puedas espaciarlos */
+    justify-content: center; /* Centra los iconos si no llenan todo el espacio */
+    align-items: center; /* Centra verticalmente los iconos si tuvieran diferentes alturas */
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+
+.icono-redes {
+    padding: 8px 12px;
+    /* margin-right: 10px; */ /* Puedes usar 'gap' en su contenedor flex en su lugar */
+    background-color: #fff;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 1.5em; /* Ajusta el tamaño del icono */
+    display: flex; /* Para centrar el contenido dentro del círculo si es necesario */
+    justify-content: center;
+    align-items: center;
+    width: 45px; /* Ejemplo de tamaño fijo para el círculo */
+    height: 45px; /* Ejemplo de tamaño fijo para el círculo */
+}
+
+h4 {
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-top: 0; /* Eliminar margen superior predeterminado del h4 */
+}
+
 /*Estilos nuevas secciones*/
 
 .primer-seccion {
@@ -152,8 +248,8 @@ footer.opacidad{
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .info-button {
@@ -196,8 +292,10 @@ footer.opacidad{
 .contenedor {
     display: flex; 
     width: 100%; 
+    padding-left: 20px;
+    padding-right: 20px;
     overflow: hidden; 
-    gap: 10px; 
+    gap: 15px; 
 }
 
 .contenedor img {
@@ -207,17 +305,18 @@ footer.opacidad{
     object-fit: cover; 
     border-radius: 10px;
     /*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);*/
-    filter: drop-shadow(8px 8px 15px rgba(140, 178, 132, 0.5))
+    /*filter: drop-shadow(2px 2px 4px rgba(140, 178, 132, 0.5))*/
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 /*Estilos nueva seccion4*/
 .cuarta-seccion{
-   background-color: #dee0e3;
+   background-color: #EEEEEE;
 }
 
 .informacion-util{
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .titulo-informacion-util, .h2-empresas{
