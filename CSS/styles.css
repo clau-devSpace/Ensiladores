@@ -12,12 +12,24 @@
 body{
     background-color: white;
 }
+
 header{
     min-height: 100vh;
     background-image: url(/imagenes/imagenes_de_fondo/favorita-11.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* efecto parallax */
+    position: relative;
+    z-index: 1; 
 }
+
+.curva-header {
+  background-color: #EEEEEE; /* o el color del fondo de la siguiente sección */
+  height: 100px;
+  clip-path: ellipse(100% 100% at 50% 0); /* curva hacia abajo */
+  margin-top: -1px; /* para que no haya espacio entre header y curva */
+}
+
 
 .animate-item {
     opacity: 0; /* Inicialmente oculto */
@@ -35,11 +47,13 @@ h1{
     font-style: normal;
     font-size: 50px;
     color: #fff;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     align-items: center;
     justify-content: center;
     padding-top: 205px;
+     transition: transform 0.3s ease, opacity 0.3s ease;
+    will-change: transform, opacity;
 }
 
 .animacion1{
@@ -68,6 +82,7 @@ h1{
 
 .titulo{
     animation-duration: 3s;
+    z-index: 2;
 }
 .titulo p{
     font-family: "Roboto Condensed", sans-serif;
@@ -78,6 +93,8 @@ h1{
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     text-align: center;
+     transition: transform 0.3s ease, opacity 0.3s ease;
+    will-change: transform, opacity;
 }
 .logo{
     padding-left: 100px;
@@ -87,7 +104,7 @@ h1{
     background-color: #e0e0e0;
 }
 
-/*Estilos Footer*/
+/*Estilos Footer
 footer{
     
     background-color: #000000;
@@ -136,7 +153,7 @@ h4{
     padding-top: 10px;
 }
 
-/*Opacidad del fondo cuando se activa el menu*/
+/*Opacidad del fondo cuando se activa el menu
 .titulo.opacidad{
     opacity: 0.5;
 }
@@ -148,7 +165,7 @@ footer.opacidad{
     opacity: 0.3;
 }
 
-/* Estilos Footer */
+/*Estilos Footer */
 footer {
     background-color: #000000;
     font-family: "Roboto", sans-serif;
@@ -233,12 +250,14 @@ h4 {
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    clip-path: none;
+    margin-top: 0;
+    z-index: 3; /* detrás del header */
 }
 
 .info-button {
     margin-top: 20px; 
+    margin-bottom: 50px;
 }
 
 .somos{
@@ -247,11 +266,23 @@ h4 {
     font-weight: 400;
     font-style: normal;
     color: #333333;
-    font-size: 25px;
+    font-size: 23px;
     text-align: left;
     max-width: 900px;
     line-height: 1.5;
     animation-duration: 2s;
+    margin-top: -100px; /* o más, para superponer */
+    padding-top: 150px; /* para compensar el margen negativo */
+    position: relative;
+}
+
+.curva {
+    background: #fff;
+    height: 120px;
+    margin-top: -60px;
+    clip-path: ellipse(100% 100% at 50% 0%);
+    z-index: 2;
+    position: relative;
 }
 
 .negrita{
@@ -271,6 +302,19 @@ h4 {
     border-radius: 100px;
     cursor: pointer;
 }
+/*Efecto parallax*/
+
+.parallax-transition {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="fieldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23228B22;stop-opacity:1" /><stop offset="50%" style="stop-color:%2332CD32;stop-opacity:1" /><stop offset="100%" style="stop-color:%23006400;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23fieldGrad)" width="1200" height="600"/><path fill="%23FFD700" opacity="0.1" d="M0,400 Q300,350 600,400 T1200,400 V600 H0 Z"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
 
 /*Estilo nueva seccion2 */
 
@@ -289,14 +333,77 @@ h4 {
     height: auto; 
     object-fit: cover; 
     border-radius: 10px;
-    /*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);*/
+    /*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     /*filter: drop-shadow(2px 2px 4px rgba(140, 178, 132, 0.5))*/
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+ .image-gallery-v1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            /*margin: 3rem 0;*/
+        }
+
+        .image-card-v1 {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: white;
+            cursor: pointer;
+            height: 350px;
+        }
+
+        .image-card-v1:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        }
+
+        .image-card-v1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .image-card-v1:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-overlay-v1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            color: white;
+            padding: 2rem;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .image-card-v1:hover .image-overlay-v1 {
+            transform: translateY(0);
+        }
+
+        .image-title-v1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: #fff;
+        }
+
+        .image-description-v1 {
+            font-size: 1rem;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+
 /*Estilos nueva seccion4*/
 .cuarta-seccion{
-   background-color: #EEEEEE;
+   background-color: #ffffff;
 }
 
 .informacion-util{
@@ -335,7 +442,7 @@ h4 {
 
 .mapa, .imagen-socios{
     width: 550px;
-    height: 300px;
+    height: 270px;
     border-radius: 12px;
 }
 
@@ -348,7 +455,7 @@ h4 {
 }
 
 .informacion-util-h2, .informacion-util-p{
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #333333;
@@ -367,8 +474,7 @@ h4 {
 /*Estilo nueva seccion3*/
 .agrinir-container{
    width: 100%;
-   background-color: #529c46;
-   
+   background-color: #6CBF55;
 
 }
 
@@ -385,7 +491,7 @@ h4 {
     align-items: flex-start;
     justify-content: left;
     line-height: 1;
-    color: white;
+    color: #ffffff;
 }
 
 .icono-texto{
@@ -393,15 +499,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    /*background-color: #d9dede;*/
-    /*background-color: #EEEEEE;*/
-    border: 1px solid #2f7a2f;
-    border-style:dotted;
-    width: 280px;
-    height: auto;
-    padding: 20px;
-    border-radius: 10px;
-}
+} 
 
 .agrinir-items{
     display: flex;
@@ -415,13 +513,19 @@ h4 {
 .descarga-agrinir{
    font-size: 25px;
    font-weight: 400;
-   color: #333333;
+   color: #ffffff;
    cursor: pointer;
    margin-left: 10px;
+   text-decoration: none;
+}
+
+.descarga-pdf{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .icono-agrinir{
-    color: white;
+    color: #ffffff;
     font-size: 25px;
     margin-right: 10px;
     align-items: middle;
@@ -436,14 +540,13 @@ h4 {
     font-weight: 300;
     font-style: normal;*/
     font-size: 18px;
-    color: white;
+    color: #ffffff;
     max-width: 700px;
 }
 
 .analisis-forraje{
-    /*filter: drop-shadow(2px 2px 10px rgba(255, 255, 255, 0.8));*/
-   /* box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);*/
-    width: 420px;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+    width: 380px;
     height: auto;
     border-radius: 10px;
 }
@@ -461,9 +564,9 @@ h4 {
 }
 
 .margenes{
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-block-start: 75px;
+    margin-left: 150px;
+    margin-right: 150px;
+    /*margin-top: 50px;*/
 }
 
 .linea-horizontal{
@@ -471,8 +574,188 @@ h4 {
     margin-bottom: 15px;
     width: 100px;
     height: 1px;
-    background-color: white;
+    background-color: #ffffff;
 }
+
+/* ==== RESET GENERAL ==== */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ==== CONTENEDOR DE PARTICULAS ==== */
+/*#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #4a8a3f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}*/
+
+/* ==== CONTENEDOR PRINCIPAL ==== */
+.promo-container {
+  position: relative;
+  width: 100%;
+  background-color: #F2F2F2;
+  overflow: hidden;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+/* ==== ANIMACIÓN DE FONDO (GRADIENTE) ==== 
+.gradient-1 {
+  background: linear-gradient(135deg, #529c46, #4a8a3f, #0c51a6, #529c46);
+  background-size: 400% 400%;
+  animation: gradientMove1 8s ease-in-out infinite;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+@keyframes gradientMove1 {
+  0%, 100% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+}*/
+
+/* ==== CONTENIDO ==== */
+.promo-items {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  /*padding-top: 30px;*/
+  padding-bottom: 40px;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.margenes {
+  margin-left: 100px;
+  margin-right: 100px;
+ /* margin-block-start: 50px;*/
+}
+
+.promo-texto {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 43px;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: left;
+  line-height: 1;
+  color: #2B2B2B;
+}
+
+.promo-titulo {
+  font-size: 43px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.promo-linea {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100px;
+  height: 1px;
+  background-color: #0c51a6;
+}
+
+.promo-descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2B2B2B;
+  max-width: 700px;
+  line-height: 1.3;
+}
+
+.promo-descripcion1 {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.promo-video-container {
+  max-width: 600px;
+  flex-shrink: 0;
+}
+
+.promo-video-container video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.promo-video {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  width: 420px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.promo-logo {
+  margin-bottom: 15px;
+}
+
+.promo-logo-img {
+  width: 210px;
+  height: auto;
+}
+
+.promo-lista {
+  margin-top: 15px;
+}
+
+.promo-lista li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.promo-icono {
+  color: white;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.promo-boton-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.promo-boton {
+    color: #ffffff;
+    width: 185px;
+    height: 55px;
+    background: linear-gradient(90deg,rgba(47, 102, 38, 1) 0%, rgba(47, 102, 38, 1) 37%, rgba(12, 81, 166, 1) 100%);
+    border: 2px solid;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.promo-boton:hover {
+    background-color: #ffffff;
+    color: #4a8a3f;
+}
+
 
 .swiper {
       width: 100%;
@@ -503,9 +786,593 @@ h4 {
       height: 100%;
     }
 
+  
+  
+/* ==========================================================================
+   Media Queries para Responsive Design (Desktop First) - Ajustes Finales + Sin Scroll Horizontal
+   ========================================================================== */
+
+/* Estilos base para h1 (asegurando el "normal" wrapping) */
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px; /* Tamaño base para escritorio muy grande */
+    color: #fff;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    /* Las siguientes propiedades son de su contenedor, pero las dejo para referencia si el h1 fuera un flex item */
+    /* align-items: center;
+    justify-content: center; */
+    padding-top: 205px; /* Padding base para escritorio */
+    white-space: normal; /* ¡Crucial! Permite que el texto se envuelva en varias líneas */
+    word-break: break-word; /* Para asegurar que palabras muy largas se rompan si es necesario */
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoint: 1280px (Escritorio - Ajustes finos para pantallas grandes)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+    /* Header h1 */
+    h1 {
+        font-size: 48px;
+        padding-top: 190px;
+    }
+
+    /* Ajustes generales de márgenes */
+    .margenes {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    /* Footer */
+    .container-footer {
+        padding: 0 70px;
+    }
+
+    /* Primera Sección (Somos) */
+    .somos {
+        font-size: 24px;
+        max-width: 850px;
+    }
+
+    /* Sección de Imágenes (contenedor) */
+    .contenedor {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 10px;
+    }
+
+    /* Sección Análisis de Forrajes (agrinir) */
+    .agrinir-items {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .analisis-forraje {
+        width: 380px;
+    }
+
+    /* Información Útil */
+    .frames {
+        gap: 20px;
+    }
+    .frames1 {
+        width: 48%;
+        max-width: 500px;
+    }
+    .mapa, .imagen-socios, .linea-horizontal3 {
+        width: 100%;
+        height: 280px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoint: 1024px (Tabletas Paisaje)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    /* Header h1 */
+    h1 {
+        font-size: 40px; /* Ajuste para tabletas paisaje */
+        padding-top: 160px; /* Ajuste de padding top para que no esté tan pegado */
+    }
+    .titulo p {
+        font-size: 20px;
+    }
+
+    /* Footer */
+    .container-footer {
+        padding: 0 40px;
+    }
+    .logo-footer {
+        width: 120px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+    .icono-redes {
+        font-size: 1.3em;
+        width: 40px;
+        height: 40px;
+    }
+    h4 {
+        padding-bottom: 8px;
+    }
+
+    /* Primera Sección (Somos) */
+    .somos {
+        font-size: 20px;
+        max-width: 700px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mas-info {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    /* Márgenes generales */
+    .margenes {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-block-start: 60px;
+    }
+
+    /* Sección de Imágenes (contenedor) */
+    .contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+    .contenedor img {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+    .contenedor img:last-child:nth-last-child(1):nth-child(odd) {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
 
 
+    /* Títulos de Sección */
+    .titulo-informacion-util, .h2-empresas, .agrinir {
+        font-size: 38px;
+        text-align: center; /* Centrar estos títulos */
+    }
+    .linea-horizontal2 {
+        width: 80px;
+        margin-left: auto;
+        margin-right: auto; /* Centrar línea */
+    }
 
+    /*Seccion Congreso */
 
+       .hero-section2 {
+    max-width: 1200px; /* Limits the overall width of the section */
+    margin: 0 auto; /* Centers the section on the page */
+    padding: 20px; /* Adds some padding around the content */
+    box-sizing: border-box; /* Ensures padding is included in the max-width */
+  }
 
+  /* Flexbox for the container to arrange text and video side-by-side */
+  .container-hero2 {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 30px; /* Spacing between the text and video sections */
+    align-items: center; /* Vertically aligns items in the center */
+    justify-content: center; /* Centers items horizontally */
+  }
 
+  /* Styling for the text content */
+  .container-hero2 > div:first-child {
+    flex: 1; /* Allows this div to grow and shrink */
+    min-width: 300px; /* Ensures text doesn't become too narrow */
+    max-width: 600px; /* Prevents text from becoming too wide */
+    text-align: left;
+  }
+
+  .container-hero2 h2 {
+    font-size: 2.5em; /* Adjust as needed */
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .container-hero2 h3 {
+    font-size: 1.5em; /* Adjust as needed */
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .container-hero2 p {
+    font-size: 1.1em; /* Adjust as needed */
+    line-height: 1.6;
+    color: #666;
+  }
+
+  /* Styling for the video section */
+  .video-section {
+    flex: 1; /* Allows the video section to grow and shrink */
+    min-width: 320px; /* Minimum width for the video */
+    max-width: 600px; /* Maximum width for the video */
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    align-items: center; /* Centers the video vertically */
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    /* 16:9 aspect ratio (height / width * 100) */
+    padding-bottom: 56.25%; /* For a 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background-color: black; /* Placeholder background */
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the container */
+  }
+
+       
+
+    /* Sección Análisis de Forrajes (agrinir) */
+    .agrinir-items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centrar texto general de la sección */
+        gap: 30px;
+    }
+    .agrinir {
+        text-align: center; /* Centrar el título de Agrinir */
+    }
+    .linea-horizontal {
+        margin-left: auto;
+        margin-right: auto; /* Centrar la línea horizontal de Agrinir */
+    }
+    .texto-agrinir {
+        max-width: 85%;
+        font-size: 16px;
+        text-align: center; /* Centrar texto */
+    }
+    .lista-agrinir {
+        padding-left: 0;
+        text-align: center; /* Centrar lista completa */
+    }
+    .lista-agrinir li {
+        justify-content: center; /* Centrar el contenido de cada ítem de la lista */
+        font-size: 16px;
+    }
+    .analisis-forraje {
+        width: 70%;
+        max-width: 450px;
+    }
+
+    /* Información Útil */
+    .frames {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .frames1 {
+        width: 85%;
+        max-width: 550px;
+    }
+    .mapa, .imagen-socios, .linea-horizontal3 {
+        height: 250px;
+    }
+    .informacion-util-h2, .informacion-util-p {
+        text-align: center; /* Centrar el texto en Información Útil */
+    }
+    .informacion-util-h2 {
+        font-size: 17px;
+    }
+    .informacion-util-p {
+        font-size: 14px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoint: 768px (Tabletas Retrato)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    header {
+        min-height: 75vh;
+    }
+    h1 {
+        font-size: 32px; /* Ajuste para tabletas retrato */
+        padding-top: 110px; /* Ajuste de padding top */
+    }
+    .titulo p {
+        font-size: 17px;
+    }
+
+    /* Footer */
+    .container-footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+    [logo-texto] {
+        align-items: center;
+    }
+    footer p {
+        font-size: 14px;
+        text-indent: 0;
+        margin-top: 5px;
+    }
+    .redes-sociales > div {
+        justify-content: center;
+    }
+    .icono-redes {
+        font-size: 1.2em;
+        width: 38px;
+        height: 38px;
+    }
+    h4 {
+        padding-bottom: 5px;
+    }
+
+    /* Primera Sección (Somos) */
+    .somos {
+        font-size: 18px;
+        max-width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center; /* Centrar texto */
+    }
+    .mas-info {
+        width: 140px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    /* Márgenes generales */
+    .margenes {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-block-start: 40px;
+    }
+
+    /* Sección de Imágenes (contenedor) */
+    .contenedor img {
+        flex: 0 0 95%;
+        max-width: 95%;
+        margin-bottom: 10px;
+    }
+
+    /* Títulos de Sección */
+    .titulo-informacion-util, .h2-empresas, .agrinir {
+        font-size: 30px;
+    }
+    .linea-horizontal2 {
+        width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Sección Análisis de Forrajes (agrinir) */
+    .texto-agrinir {
+        font-size: 14px;
+        max-width: 90%;
+        text-align: center; /* Centrar texto */
+    }
+    .lista-agrinir li {
+        font-size: 14px;
+        justify-content: center; /* Centrar los ítems de la lista */
+    }
+    .analisis-forraje {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    /* Información Útil */
+    .frames1 {
+        width: 95%;
+    }
+    .mapa, .imagen-socios {
+        height: 220px;
+    }
+    .informacion-util-h2, .informacion-util-p {
+        text-align: center; /* Centrar el texto en Información Útil */
+    }
+    .informacion-util-h2 {
+        font-size: 16px;
+    }
+    .informacion-util-p {
+        font-size: 13px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoint: 480px (Móvil Paisaje)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+    header {
+        min-height: 55vh; /* Ajuste de altura para móvil paisaje */
+    }
+    h1 {
+        font-size: 26px; /* Ajuste para móvil paisaje */
+        padding-top: 80px; /* Ajuste de padding top */
+    }
+    .titulo p {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .container-footer {
+        padding: 15px;
+        gap: 10px;
+    }
+    .logo-footer {
+        width: 90px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    .icono-redes {
+        font-size: 1em;
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Primera Sección (Somos) */
+    .somos {
+        font-size: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        text-align: center; /* Centrar texto */
+    }
+    .mas-info {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    /* Márgenes generales */
+    .margenes {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-block-start: 30px;
+    }
+
+    /* Títulos de Sección */
+    .titulo-informacion-util, .h2-empresas, .agrinir {
+        font-size: 24px;
+    }
+    .linea-horizontal2 {
+        width: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Sección Análisis de Forrajes (agrinir) */
+    .texto-agrinir {
+        font-size: 13px;
+        text-align: center; /* Centrar texto */
+    }
+    .lista-agrinir li {
+        font-size: 13px;
+        justify-content: center; /* Centrar los ítems de la lista */
+    }
+    .icono-agrinir {
+        font-size: 18px;
+    }
+    .analisis-forraje {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* Información Útil */
+    .mapa, .imagen-socios {
+        height: 180px;
+    }
+    .informacion-util-h2, .informacion-util-p {
+        text-align: center; /* Centrar el texto en Información Útil */
+    }
+    .informacion-util-h2 {
+        font-size: 14px;
+    }
+    .informacion-util-p {
+        font-size: 12px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Breakpoint: 320px (Móvil Retrato)
+   -------------------------------------------------------------------------- */
+@media (max-width: 320px) {
+    header {
+        min-height: 45vh; /* Ajuste de altura para móvil retrato */
+    }
+    h1 {
+        font-size: 20px; /* Ajuste para móvil retrato */
+        padding-top: 60px; /* Ajuste de padding top */
+    }
+    .titulo p {
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .container-footer {
+        padding: 10px;
+    }
+    .logo-footer {
+        width: 70px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    .icono-redes {
+        font-size: 0.9em;
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Primera Sección (Somos) */
+    .somos {
+        font-size: 14px;
+        text-align: center; /* Centrar texto */
+    }
+    .mas-info {
+        width: 110px;
+        height: 38px;
+        font-size: 13px;
+    }
+
+    /* Márgenes generales */
+    .margenes {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-block-start: 25px;
+    }
+
+    /* Títulos de Sección */
+    .titulo-informacion-util, .h2-empresas, .agrinir {
+        font-size: 20px;
+    }
+    .linea-horizontal2 {
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Sección Análisis de Forrajes (agrinir) */
+    .texto-agrinir {
+        font-size: 12px;
+        text-align: center; /* Centrar texto */
+    }
+    .lista-agrinir li {
+        font-size: 12px;
+        justify-content: center; /* Centrar los ítems de la lista */
+    }
+    .icono-agrinir {
+        font-size: 16px;
+    }
+    .analisis-forraje {
+        max-width: 280px;
+    }
+
+    /* Información Útil */
+    .mapa, .imagen-socios {
+        height: 150px;
+    }
+    .informacion-util-h2, .informacion-util-p {
+        text-align: center; /* Centrar el texto en Información Útil */
+    }
+    .informacion-util-h2 {
+        font-size: 13px;
+    }
+    .informacion-util-p {
+        font-size: 11px;
+    }
+}

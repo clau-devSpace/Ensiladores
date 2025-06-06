@@ -14,88 +14,117 @@
 </head>
 <body>
 
-    <nav>
+      <nav>
         <a href="index.html"><img src="imagenes/logos/Group 5.svg" class="logo" /></a>
 
         <div class="nav-items">
-          <button class="btn-asociate">
-            Asociate<a href="#" class="asociate"></a>
-          </button>
+            <a href="#asociate" class="btn-asociate">Asociate</a>
 
-           <div class="menu" id="menu-2" onclick="toggleMenu()">
-             <div class="bar" id="bar1"></div>
-             <div class="bar" id="bar2"></div>
-             <div class="bar" id="bar3"></div>
-           </div>
+            <div class="menu" id="menu-btn" onclick="toggleMenu()">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
 
-           <div class="close-menu" id="close-menu" onclick="toggleMenu()">
-            <i class="bi bi-x-circle close-button"></i>
-           </div> 
-          
-          
-          <!--<div class="McButton-container">
-            <a class="McButton" data="hamburger-menu" onclick="toggleMenu()">
-            <b></b>
-            <b></b>
-            <b></b>
-          </a>
-          </div>
-
-           
-          <div class="open-btn-container">
-             <ul onclick="toggleMenu()" class="open-btn">
-                <li class="line line-one"></li>
-                <li class="line line-two"></li>
-                <li class="line line-three"></li>
-            </ul>
-          </div>
-          
-          <button class="open-btn" onclick="toggleMenu()">
-            <i class="bi bi-list"></i>
-          </button>-->
+            <div class="close-menu" id="close-menu" onclick="toggleMenu()">
+                <i class="bi bi-x-circle close-button"></i>
+            </div>
         </div>
 
-        <div class="menu-container animate__animated " id="menu">
+        <!-- Menú para pantallas grandes (tu diseño original) -->
+        <div class="menu-container animate__animated" id="desktop-menu">
+            <div class="menu-container2">
+                <div class="container-items">
+                    <ul class="menu-items items-1">
+                        <li><i class="bi bi-arrow-right"></i><a href="#" id="nosotros">Nosotros</a></li>
+                        <li><i class="bi bi-arrow-right"></i><a href="#" >Nuestros Socios</a></li>
+                        <li><i class="bi bi-arrow-right"></i><a href="#">Convenios</a></li>
+                        <li><i class="bi bi-arrow-right"></i><a href="#">Exclusivo Socios</a></li>
+                        <li><i class="bi bi-arrow-right"></i><a href="#" id="areas">Área Económica</a></li>
+                        <li><i class="bi bi-arrow-right"></i><a href="#">Área Técnica</a></li>
+                        <li><i class="bi bi-arrow-right"></i><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
 
-          <div  class="menu-container2">
-            <div class="container-items">
-               <ul class="menu-items items-1">
-                 <li><i class="bi bi-arrow-right"></i><a href="#" id="nosotros" onclick="showList()">Nosotros</a></li>
-                 <li><i class="bi bi-arrow-right"></i><a href="#" id="areas" onclick="showList()">Áreas</a></li>
-                 <li><i class="bi bi-arrow-right"></i><a href="#">Mapa</a></li>
-                 <li><i class="bi bi-arrow-right"></i><a href="#">Exclusivo Socios</a></li>
-                 <li><i class="bi bi-arrow-right"></i><a href="#">Contacto</a></li>
-               </ul>
-             </div>
+                <div class="vertical-line"></div>
 
-             <div class="vertical-line"></div>
+                <div class="container-items">
+                    <ul class="menu-items items-2" id="items2">
+                        <li><a href="#">Misión, Visión y Valores</a></li>
+                        <li><a href="#">Junta Directiva</a></li>
+                        <li><a href="#">Quiero Asociarme</a></li>
+                    </ul>
+                </div>
 
-              <div class="container-items">
-                 <ul class="menu-items items-2" id="items2">
-                   <li><a href="#">Misión, Visión y Valores</a></li>
-                   <li><a href="#">Junta Directiva</a></li>
-                   <li><a href="socios.html">Nuestros Socios</a></li>
-                   <li><a href="#">Convenios</a></li>
-                   <li><a href="#">Quiero Asociarme</a></li>
-                  </ul>
-               </div>
+                <div class="container-items">
+                    <ul class="menu-items  items-3" id="items3">
+                        <li><a href="#">Precios de referencia</a></li>
+                        <li><a href="#">Costos Silaje</a></li>
+                        <li><a href="#">Costos MS</a></li>
+                        <li><a href="#">Costos Transportes MV</a></li>
+                    </ul>
+                </div>
 
-               <div class="container-items items-3">
-                 <ul class="menu-items los3" id="items3">
-                   <li><a href="#">Área Económica</a></li>
-                   <li><a href="#">Área Técnica</a></li>
-                  </ul>
-               </div>
-
-               <div class="img-container-menu">
-                <img class="img-menu" src="imagenes/imagenes_de_fondo/nueva-menu.png">
-               </div>
-          </div>
-             
-           
-         
+                <div class="img-container-menu">
+                    <img class="img-menu" src="imagenes/imagenes_de_fondo/nueva-menu.png">
+                </div>
+            </div>
         </div>
-      </nav>
+
+        <!-- Menú para móviles (estilo acordeón) -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-nav-item">
+                <a href="#inicio" class="mobile-nav-link">Inicio</a>
+            </div>
+
+            <div class="mobile-nav-item">
+                <a href="#" class="mobile-nav-link" data-submenu="nosotros">
+                    Nosotros
+                    <span class="mobile-dropdown-arrow"></span>
+                </a>
+                <div class="mobile-submenu" id="mobile-submenu-nosotros">
+                    <a href="#mision" class="mobile-submenu-item">Misión, Visión y Valores</a>
+                    <a href="#junta" class="mobile-submenu-item">Junta Directiva</a>
+                    <a href="#asociarme" class="mobile-submenu-item">Quiero Asociarme</a>
+                </div>
+            </div>
+
+            <div class="mobile-nav-item">
+                <a href="#nuestros-socios" class="mobile-nav-link">Nuestros Socios</a>
+            </div>
+
+            <div class="mobile-nav-item">
+                <a href="#mapa" class="mobile-nav-link">Convenios</a>
+            </div>
+
+            <div class="mobile-nav-item">
+                <a href="#exclusivo" class="mobile-nav-link" data-submenu="areas">Área Económica
+                   <span class="mobile-dropdown-arrow"></span>
+                </a>
+                <div class="mobile-submenu" id="mobile-submenu-areas">
+                    <a href="#economica" class="mobile-submenu-item">Precios de Referencia</a>
+                    <a href="#economica" class="mobile-submenu-item">Costos Silaje</a>
+                    <a href="#economica" class="mobile-submenu-item">Costo MS</a>
+                    <a href="#economica" class="mobile-submenu-item">Costos Transportes MV</a>
+                </div>
+            </div>
+
+            <div class="mobile-nav-item">
+                <a href="#contacto" class="mobile-nav-link">Área Técnica</a>
+            </div>
+
+              <div class="mobile-nav-item">
+                <a href="#contacto" class="mobile-nav-link">Exclusivo Socios</a>
+            </div>
+
+              <div class="mobile-nav-item">
+                <a href="#contacto" class="mobile-nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay para mobile -->
+    <div class="menu-overlay" id="menu-overlay"></div>
     <script src="JS/toggle.js"></script>
 </body>
 </html>
